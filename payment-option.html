@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Surya</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/productlist.css" />
+  <link rel="stylesheet" href="assets/css/res.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- /End Preloader -->
+
+  <!-- Start Header Area -->
+  <header class="header navbar-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="nav-inner">
+            <!-- Start Navbar -->
+            <nav class="navbar navbar-expand-lg">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/soorya_logo.png" alt="Logo">
+              </a>
+
+              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                <ul id="nav" class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a href="#home" class="page-scroll active" aria-label="Toggle navigation">Women</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#features" class="page-scroll" aria-label="Toggle navigation">Men</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="javascript:void(0)" aria-label="Toggle navigation">Kids</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#pricing" class="page-scroll" aria-label="Toggle navigation">Home &
+                      living</a>
+                  </li>
+
+                </ul>
+              </div> <!-- navbar collapse -->
+              <div class="button add-list-button">
+                <ul class="right_side_ul">
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_01.svg">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_03.svg">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_02.svg">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_04.svg"> Sign in
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+              </button>
+            </nav>
+            <!-- End Navbar -->
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </header>
+  <!-- End Header Area -->
+
+
+  <!--<div class="d-flex border_top shadow"></div>-->
+
+  <div class="inner-page cart custom_border_shaodw">
+    <div class="container">
+
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb breadcrumb1 mb-0">
+          <li class="breadcrumb-item"><a href="#">Men's Graphic Oversized T-Shirt </a></li>
+          <li class="breadcrumb-item active" aria-current="page">All Reviews</li>
+        </ol>
+      </nav>
+
+
+      <div class="payment-option pb-sm-5 pb-3">
+        <div class="row">
+          <div class="col-md-7">
+
+            <h4 class="mb-3 inner-title">PAYMENT OPTIONS</h4>
+              <div class="accordion shadow-sm" id="paymentAccordion">
+          
+                <!-- UPI Option -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <input type="radio" name="paymentOption" class="me-2 form-check-input" checked> UPI
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                      <h6 class="text-muted mb-3">Choose An Option</h6>
+                      <div class="form-check radio-option">
+                        <input class="form-check-input" type="radio" name="upiOption" id="phonepe" checked>
+                        <label class="form-check-label" for="phonepe">PhonePe</label>
+                      </div>
+                      <div class="form-check radio-option">
+                        <input class="form-check-input" type="radio" name="upiOption" id="googlepay">
+                        <label class="form-check-label" for="googlepay">Google Pay</label>
+                      </div>
+                      <div class="form-check radio-option">
+                        <input class="form-check-input" type="radio" name="upiOption" id="upiId">
+                        <label class="form-check-label" for="upiId">Your UPI ID</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Credit/Debit Card Option -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <input type="radio" name="paymentOption" class="me-2"> Credit/Debit / ATM Card
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                      <!-- Credit Card form content goes here -->
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Net Banking Option -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <input type="radio" name="paymentOption" class="me-2"> Net Banking
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                      <!-- Net Banking form content goes here -->
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Cash on Delivery Option -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <input type="radio" name="paymentOption" class="me-2"> Cash on Delivery
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#paymentAccordion">
+                    <div class="accordion-body">
+                      <!-- Cash on Delivery details go here -->
+                    </div>
+                  </div>
+                </div>
+          
+              </div>
+            </div>
+
+          <div class="col-md-5 price-details">
+            <h4 class="mb-3 inner-title">Price details</h4>
+            <div class="cart-summary">
+              <p>Bag Total <span>₹2499.00</span></p>
+              <p>Delivery fee <span>₹29.00</span></p>
+              <p>Bag Subtotal <span>₹2528.00</span></p>
+              <p>Product Discount(s) <span>-₹1249.00</span></p>
+              <p class="save-price">You will save ₹1249.00 on this order</p>
+              <hr class="minus-margin">
+              <p class="total grand-total">Total <span>₹1279</span></p>
+            </div>
+            <button class="place-order">Continue</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- Start Footer Area -->
+  <footer class="footer">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-8 col-12">
+            <div class="row">
+
+              <div class="col-lg-4 col-md-6 col-12">
+                <div class="single-footer f-about">
+                  <div class="logo">
+                    <a href="index.html">
+                      <img src="assets/images/soorya_logo.png" alt="#">
+                    </a>
+                  </div>
+                  <p>© 2023 Suryasilksonline.com</p>
+
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6 col-6">
+                <!-- Single Widget -->
+                <div class="single-footer f-link">
+
+                  <ul>
+                    <li><a href="javascript:void(0)">About Us</a></li>
+                    <li><a href="javascript:void(0)">Trends of Fashion's</a></li>
+                    <li><a href="javascript:void(0)">Career</a></li>
+                    <li><a href="javascript:void(0)">Contact Information</a></li>
+                  </ul>
+                </div>
+                <!-- End Single Widget -->
+              </div>
+              <div class="col-lg-4 col-md-6 col-6">
+                <!-- Single Widget -->
+                <div class="single-footer f-link">
+
+                  <ul>
+                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                    <li><a href="javascript:void(0)">Terms of Service</a></li>
+                    <li><a href="javascript:void(0)">Refund policy</a></li>
+                    <li><a href="javascript:void(0)">Shipping Policy</a></li>
+                  </ul>
+                </div>
+                <!-- End Single Widget -->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <!-- Single Widget -->
+            <h3>EXPERIENCE SURYA SILKS APP ON MOBILE</h3>
+            <a href="">
+              <img src="assets/images/playstore.png">
+            </a>
+
+            <div class="w-100 follow">
+              <p>Follow Us</p>
+              <ul class="social_media">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/fb.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/tw.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/in.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Single Widget -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
+
+  <!-- ========================= scroll-top ========================= -->
+  <a href="#" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- ========================= JS here ========================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

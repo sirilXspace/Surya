@@ -3412,16 +3412,17 @@ input[type="checkbox"].color-select:checked::before {
   border-bottom-left-radius: 0px;
 }
 
-.accordion-button:not(.collapsed)::after {
+.accordion-button:not(.collapsed) {
   background-image: url(../images/ic_baseline-minus.svg);
-  transform: rotate(180deg);
+  /*transform: rotate(180deg);*/
 }
 
-.accordion-button::after {
+.accordion-button {
   background-image: url(../images/ic_baseline-plus.svg);
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
+  background-position: center right 10px;
 }
 
 .custom_accordion .accordion-button:last-child {
@@ -4829,6 +4830,57 @@ input[type="range"]:first-of-type {
 .product-list-card-wrapper:hover .card-img-wrapper>img {
   transform: scale(1.12);
 }
+
+.star-rating-2 {
+  direction: rtl; /* RTL to reverse the star order visually */
+  display: inline-flex;
+}
+
+.star-rating-2 input {
+  display: none; /* Hide radio buttons */
+}
+
+.star-rating-2 label {
+  font-size: 25px;
+  line-height:25px;
+  color: lightgray;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.star-rating-2 label:before {
+  content: "\2605"; /* Unicode star character */
+}
+
+.star-rating-2 input:checked ~ label {
+  color: #ffa500; /* Color stars gold when selected */
+}
+
+.star-rating-2 label:hover,
+.star-rating-2 label:hover ~ label {
+  color: #ffa500; /* Highlight stars on hover */
+}
+
+.total-star-rating {
+  display: inline-block;
+  margin:3px 10px 0px;
+}
+
+.total-star-rating .star {
+  font-size: 20px;
+  line-height:20px;
+  color: lightgray;
+}
+
+.star.highlighted {
+  color: gold;
+}
+.post-my-review{padding:30px 30px}
+.post-my-review h5{color:#222222;font-size:16px;font-weight:600;}
+.post-my-review h6{font-size:14px;font-weight:400;}
+.text_fi{padding:10px 10px;border:1px solid #DFDFDF;resize:none;width:100%;}
+.buttons.style-2 .cancel-btn{border:1px solid #FF406C;}
+.buttons.style-2 button{border-radius:5px;}
 
 @media (max-width: 1199.98px) {
 

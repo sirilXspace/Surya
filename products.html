@@ -914,14 +914,6 @@
         document.getElementById('closePopup').addEventListener('click', function () {
             document.getElementById('mobilePopup').style.display = 'none';
         });
-
-        // Optional: Close the popup if user clicks outside the content
-        window.addEventListener('click', function (event) {
-            if (event.target === document.getElementById('mobilePopup')) {
-                document.getElementById('mobilePopup').style.display = 'none';
-            }
-        });
-
     </script>
 </body>
 

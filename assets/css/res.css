@@ -88,6 +88,13 @@
     .deliver-details h3 {
         font-size: 16px;
     }
+    .flash-sale-wrap h5{font-size:24px;}
+    #countdown{font-size:36px;line-height:36px;}
+    .overlay-box{font-size:18px;line-height:24px;}
+    .current-price{font-size:24px;}
+    .actual-price{font-size:18px;}
+    .offer-text{font-size:16px;}
+    .view_all{font-size:18px;}
 
 }
 
@@ -179,6 +186,12 @@
     .deliver-details {
         padding: 30px 20px;
     }
+    .card-title {
+        font-size: 14px;
+    }
+    .flash-sale .wrap{padding:50px 30px}
+    .unit{margin-right:15px;}
+    #countdown{font-size:28px;line-height:28px;}
 }
 
 @media (min-width: 768px) {
@@ -439,6 +452,22 @@
     .cart-total {
         font-size: 15px;
     }
+    .social_media li {
+        margin-right: 3%;
+      }
+      .search_btn{padding:5px 17px}
+      .signin_text{font-size:0px;}
+      /*.hero-area{padding:90px 0 20px 0;}*/
+      .flash-product-block .box-wrap .current-price{padding:10px 5px}
+      .overlay-box{padding:7px 10px}
+      .view_all{font-size:15px;line-height:21px;}
+      .flash-sale-wrap h5{font-size:16px;}
+      #countdown{font-size:24px;line-height:24px;}
+      .collection-box .block{padding:20px 20px}
+      .collection-box .c-box{margin-top:0.5rem;margin-bottom:0.5rem;}
+      .under599 .c-box{margin-bottom:2.5rem;}
+      .custom_title_block{padding:15px 15px}
+      .flash-sale{margin-top:20px;}
 }
 
 
@@ -477,6 +506,13 @@
     .deliver-details h4 {
         font-size: 14px;
     }
+    .flash-sale .wrap{padding:30px 20px}
+    /*.hero-area{padding:90px 0 20px 0;}*/
+    h3{font-size:19px;}
+    .flash-sale-wrap h5{padding:10px 20px;font-size:14px;}
+    #countdown{font-size:20px;padding:10px 10px}
+    .flash-sale .wrap{background-image: none;}
+    .flash-product-block{margin-top:30px;}
 
 
 

@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/res.css" />
+  <link rel="stylesheet" href="assets/css/menu.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -42,39 +44,70 @@
   <!-- /End Preloader -->
 
   <!-- Start Header Area -->
-  <header class="header navbar-area">
+  <header class="header site-navbar navbar-area">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-12">
           <div class="nav-inner">
             <!-- Start Navbar -->
-            <nav class="navbar navbar-expand-lg">
+            <div class="d-flex justify-content-between align-items-center">
               <a class="navbar-brand" href="index.html">
                 <img src="assets/images/soorya_logo.png" alt="Logo">
               </a>
 
-              <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
-                <ul id="nav" class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a href="#home" class="page-scroll active" aria-label="Toggle navigation">Women</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#features" class="page-scroll" aria-label="Toggle navigation">Men</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="javascript:void(0)" aria-label="Toggle navigation">Kids</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="#pricing" class="page-scroll" aria-label="Toggle navigation">Home & living</a>
-                  </li>
+              <div class="d-none d-xl-block menu-wrap">
+                <nav class="site-navigation position-relative text-right" role="navigation">
 
-                </ul>
-              </div> <!-- navbar collapse -->
+                  <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                    <li class="active"><a href="index.html"><span>Home</span></a></li>
+                    <li class="has-children">
+                      <a href="#"><span>WOMEN</span></a>
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                        <li class="has-children">
+                          <a href="#">Dropdown</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                            <li><a href="#">Menu Four</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a href="#"><span>MEN</span></a>
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                        <li class="has-children">
+                          <a href="#">Dropdown</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                            <li><a href="#">Menu Four</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><span>KIDS</span></a></li>
+                    <li><a href="#"><span>CATEGORY</span></a></li>
+                    <li><a href="#"><span>WEDDING</span></a></li>
+                  </ul>
+                </nav>
+              </div>
+
+
+
               <div class="button add-list-button">
                 <ul class="right_side_ul">
                   <li>
                     <a href="#">
-                      <img src="assets/images/icn_01.svg">
+                      <img src="assets/images/icn_01.svg" data-bs-toggle="modal" data-bs-target="#searchModal">
                     </a>
                   </li>
 
@@ -90,19 +123,18 @@
                   </li>
                   <li>
                     <a href="#">
-                      <img src="assets/images/icn_04.svg"> Sign in
+                      <img src="assets/images/icn_04.svg"> <span class="signin_text">Sign in</span>
                     </a>
                   </li>
                 </ul>
               </div>
-              <button class="navbar-toggler mobile-menu-btn" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-                <span class="toggler-icon"></span>
-              </button>
-            </nav>
+
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto"><a href="#"
+                  class="site-menu-toggle js-menu-toggle"><span class="icon-menu"><i
+                      class="fa-solid fa-bars"></i></span></a></div>
+
+
+            </div>
             <!-- End Navbar -->
           </div>
         </div>
@@ -111,49 +143,57 @@
   </header>
   <!-- End Header Area -->
 
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
   <!-- Start Hero Area -->
   <section id="home" class="hero-area">
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="container">
-            <img src="assets/images/slider_img.png">
+            <img src="assets/images/slider_img.jpg" alt="image">
           </div>
         </div>
         <div class="swiper-slide">
           <div class="container">
-            <img src="assets/images/slider_img.png">
+            <img src="assets/images/slider_img.jpg" alt="image">
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
   <!-- End Hero Area -->
 
   <!-- Start Features Area -->
-  <section id="features" class=" py-2 py-md-4  ">
+  <section class="pt-3 pt-md-4 main-categories">
     <div class="container position-relative px-md-5 px-3">
       <div class="swiper mySwiper_2">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f1.png">
+              <img src="assets/images/f1.png" alt="image">
             </div>
             <h3>Sarees</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f2.png">
+              <img src="assets/images/f2.png" alt="image">
             </div>
             <h3>Westernwear</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f3.png">
+              <img src="assets/images/f3.png" alt="image">
             </div>
             <h3>Shirts</h3>
 
@@ -167,14 +207,14 @@
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f5.png">
+              <img src="assets/images/f4.png" alt="image">
             </div>
             <h3>Maternity wear</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f6.png">
+              <img src="assets/images/f5.png" alt="image">
             </div>
             <h3>Kidswear</h3>
 
@@ -182,42 +222,42 @@
 
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f1.png">
+              <img src="assets/images/f1.png" alt="image">
             </div>
             <h3>Sarees</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f2.png">
+              <img src="assets/images/f2.png" alt="image">
             </div>
             <h3>Westernwear</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f3.png">
+              <img src="assets/images/f3.png" alt="image">
             </div>
             <h3>Shirts</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f4.png">
+              <img src="assets/images/f4.png" alt="image">
             </div>
             <h3>Oversized T-Shirts</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f5.png">
+              <img src="assets/images/f5.png" alt="image">
             </div>
             <h3>Maternity wear</h3>
 
           </div>
           <div class="swiper-slide">
             <div class="f_img">
-              <img src="assets/images/f6.png">
+              <img src="assets/images/f6.png" alt="image">
             </div>
             <h3>Kidswear</h3>
 
@@ -241,680 +281,936 @@
 
 
 
-
-
-
-
-
-  <section id="features" class="py-2 py-md-5  ">
-    <div class="container position-relative  ">
-      <div class="title_block">
-        <h3>Best Sellers</h3>
-
-        <a class="more_buttion" href="#">View All <img src="assets/images/right.png"></a>
-      </div>
-
-
-      <div class=" row mt-3 mb-md-5 mb-3">
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_4.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
+  <section class="flash-sale">
+    <div class="container">
+      <div class="wrap radius-25">
+        <div class="flash-sale-wrap">
+          <div class="col-12 mb-3"><img src="assets/images/flash-sale-text.png" alt="flash-sale" class="m-auto"></div>
+          <h5>Discounted Price Valid Only For</h5>
+          <div id="countdown">
+            <span id="days"></span><span class="unit">d</span>
+            <span id="hours"></span><span class="unit">h</span>
+            <span id="minutes"></span><span class="unit">m</span>
+            <span id="seconds"></span><span class="unit">s</span>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_1.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
+          <div class="swiper flash-product-block">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box-wrap">
+                <div class="flash-box">
+                  <img src="assets/images/winter-fit-01.jpg" alt="image">
+                  <div class="overlay-box bg-color-1 text-center">WINTER FIT</div>
+                </div>
+                <div class="current-price">
+                  ₹400 <span class="actual-price">₹900</span>
+                  <span class="offer-text">56% off</span>
+                </div>
               </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
 
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
+              <div class="swiper-slide box-wrap">
+                <div class="flash-box">
+                  <img src="assets/images/winter-fit-02.jpg" alt="image">
+                  <div class="overlay-box bg-color-2 text-center">WINTER FIT</div>
+                </div>
+                <div class="current-price">
+                  ₹400 <span class="actual-price">₹900</span>
+                  <span class="offer-text">56% off</span>
+                </div>
               </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_2.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
 
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
+              <div class="swiper-slide box-wrap">
+                <div class="flash-box">
+                  <img src="assets/images/winter-fit-03.jpg" alt="image">
+                  <div class="overlay-box bg-color-3 text-center">WINTER FIT</div>
+                </div>
+                <div class="current-price">
+                  ₹400 <span class="actual-price">₹900</span>
+                  <span class="offer-text">56% off</span>
+                </div>
               </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
+
+              <div class="swiper-slide box-wrap">
+                <div class="flash-box">
+                  <img src="assets/images/winter-fit-01.jpg" alt="image">
+                  <div class="overlay-box bg-color-4 text-center">WINTER FIT</div>
+                </div>
+                <div class="current-price">
+                  ₹400 <span class="actual-price">₹900</span>
+                  <span class="offer-text">56% off</span>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_3.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
+          <div class="text-center">
+            <a href="#" class="view_all mt-md-5 mt-2">View All</a>
           </div>
-        </div>
-
-
 
       </div>
-
-
-      <div class="col-12 row mt-3 mb-3 mb-md-5 ">
-
-        <img class="img-fluid" src="assets/images/add.png">
-      </div>
-
-      <div class="title_block">
-        <h3>New Arrivals</h3>
-
-        <a class="more_buttion" href="#">View All <img src="assets/images/right.png"></a>
-      </div>
-
-
-
-
-
-      <div class="col-12 row mt-3 ">
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_4.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_1.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_2.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_3.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-      <div class="title_block">
-        <h3>Best Sellers</h3>
-
-        <a class="more_buttion" href="#">View All <img src="assets/images/right.png"></a>
-      </div>
-
-
-      <div class=" row mt-3 mb-md-5 mb-3">
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_4.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_1.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_2.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_3.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
-
-
-    </div>
   </section>
 
 
 
 
-  <section class="bg_02  py-2 py-md-5  ">
-    <div class="container position-relative px-md-5 px-3">
+  <section class="bestsellers mt-sm-5 mt-4">
+    <div class="container position-relative">
+      <div class="title_block">
+        <h3>Best Sellers</h3>
+
+        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
+      </div>
+      <div class="row mt-3 mb-md-4 mb-2 best-sellers">
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html">
+                    <img src="assets/images/fluent-mdl2_full-view.png">
+                  </a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_4.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_1.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_2.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_3.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="women-collection collection-box">
+        <div class="title_block justify-content-center custom_bg custom_title_block">
+          <h3 class="custom-color">Women Collections</h3>
+        </div>
+        <div class="block">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="col-md-3 col-6">
+            <div class="c-box">
+              <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="add_banner mt-sm-5 mt-3 mb-3 mb-md-5">
+        <img class="img-fluid" src="assets/images/add_banner.png" class="w-100 radius-20">
+      </div>
+
+      <div class="offer-banner mt-3 mb-3 mb-md-5">
+        <img src="assets/images/offer-banner-2.jpg" alt="image" class="w-100 radius-25">
+      </div>
+
+      <div class="under-599 collection-box mb-3 mb-md-5">
+        <div class="title_block justify-content-center custom_bg custom_title_block">
+          <h3 class="custom-color">Under 599 - Women Collection</h3>
+        </div>
+        <div class="block">
+        <div class="swiper under599">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="c-box">
+              <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        </div>
+        </div>
+      </div>
+
+
+      <div class="title_block">
+        <h3>New Arrivals</h3>
+        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
+      </div>
+
+
+      <div class="row mt-3 best-sellers">
+        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_4.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_1.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_2.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_3.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="mens-collection-offers mt-3 mb-sm-5 mb-3">
+    <div class="container position-relative">
+    <div class="title_block justify-content-center custom_bg2 custom_title_block">
+      <h3 class="custom-color">Mens Collections</h3>
+    </div>
+    <div class="offer-ad-3 mt-4">
+      <img src="assets/images/offer-banner-3.jpg" alt="image" class="w-100 radius-25">
+    </div>
+    <div class="offer-ad-4 mt-3">
+      <img src="assets/images/offer-banner-4.jpg" alt="image" class="w-100 radius-25">
+    </div>
+    <div class="offer-ad-5 mt-3">
+      <img src="assets/images/offer-banner-5.jpg" alt="image" class="w-100 radius-25">
+    </div>
+  </div>
+  </section>
+
+  <section class="under-599 collection-box">
+    <div class="container position-relative">
+    <div class="title_block justify-content-center custom_bg2 custom_title_block">
+      <h3 class="custom-color">Under 599 - Men Collection</h3>
+    </div>
+    <div class="block">
+    <div class="swiper under599">
+      <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="c-box">
+          <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="recently-viewed mt-sm-5 mt-4">
+
+    <div class="container position-relative">
+
+
+
+      <div class="title_block">
+        <h3>Recently Viewed</h3>
+        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
+      </div>
+
+
+      <div class="row mt-4 mb-md-3 mb-3 best-sellers">
+        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_4.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_1.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_2.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
+          <div class="product-list-card-wrapper">
+            <div class="card-img-wrapper">
+              <ul class="card_hover">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/humbleicons_cart.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/ph_heart-bold.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
+                </li>
+              </ul>
+              <img src="assets/images/product-list/image_3.png" alt="" />
+            </div>
+            <div>
+              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
+                <p class="star-rating">
+                  4.5
+                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
+                </p>
+                <p class="star-text">(1750)</p>
+              </div>
+              <h6 class="card-title mt-3">
+                Men's Graphic Oversized T-Shirt
+              </h6>
+              <div class="color-select-wrapper d-flex gap-2 mt-3">
+
+                <input class="color-select color-1" type="checkbox">
+                <input class="color-select color-2" type="checkbox">
+                <input class="color-select color-3" type="checkbox">
+                <input class="color-select color-4" type="checkbox">
+                <input class="color-select color-5" type="checkbox">
+                <input class="color-select color-6" type="checkbox">
+
+              </div>
+              <p class="current-price mt-3">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <div class="container">
+  <div class="bg_02 p-3 p-md-5 block-add radius-25">
       <div class="row">
         <div class="col-md-6 col-12">
-          <a href="">
-            <img src="assets/images/img_03.png">
+          <a href="#">
+            <img src="assets/images/img_04.jpg" class="shadow radius-25">
           </a>
         </div>
         <div class="col-md-6 col-12">
-          <a href="">
-            <img src="assets/images/img_04.png">
+          <a href="#">
+            <img src="assets/images/img_03.jpg" class="shadow radius-25">
           </a>
         </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="weare-everyone">
+    <div class="container position-relative">
+      <div class="wrap custom_bg3 radius-20">
+        <h3 class="mb-3">We are Everywhere!</h3>
+        <div class="swiper location-slider">
+          <div class="swiper-wrapper">
+          <div class="swiper-slide location-place-img position-relative">
+            <img src="assets/images/surya-kannur-1.png" alt="image">
+            <div class="overlay-box-2">Kannur</div>
+          </div>
+
+          <div class="swiper-slide location-place-img position-relative">
+            <img src="assets/images/surya-kannur-2.jpg" alt="image">
+            <div class="overlay-box-2">Payyanur</div>
+          </div>
+
+          <div class="swiper-slide location-place-img position-relative">
+            <img src="assets/images/surya-kannur-3.png" alt="image">
+            <div class="overlay-box-2">Kozhikode</div>
+          </div>
+
+          <div class="swiper-slide location-place-img position-relative">
+            <img src="assets/images/surya-kannur-4.jpg" alt="image">
+            <div class="overlay-box-2">Kannur</div>
+          </div>
+        </div>
+      </div>
       </div>
     </div>
   </section>
@@ -930,25 +1226,20 @@
 
 
 
+  <section class="py-4 py-md-5">
 
-  <section class="py-2 py-md-5">
-
-    <div class="container position-relative  ">
+    <div class="container position-relative ">
 
 
 
       <div class="title_block">
         <h3>Best Sellers</h3>
 
-        <a class="more_buttion" href="#">View All <img src="assets/images/right.png"></a>
+        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
       </div>
 
 
-
-
-
-
-      <div class=" row mt-3 mb-md-5 mb-3">
+      <div class="row mt-3 mb-md-3 mb-3 best-sellers">
         <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
           <div class="product-list-card-wrapper">
             <div class="card-img-wrapper">
@@ -964,9 +1255,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_4.png" alt="" />
@@ -1014,9 +1303,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_1.png" alt="" />
@@ -1064,9 +1351,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_2.png" alt="" />
@@ -1114,9 +1399,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_3.png" alt="" />
@@ -1156,11 +1439,11 @@
       <div class="title_block">
         <h3>New Arrivals</h3>
 
-        <a class="more_buttion" href="#">View All <img src="assets/images/right.png"></a>
+        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
       </div>
 
 
-      <div class=" row mt-3 mb-md-5 mb-3">
+      <div class="row mt-3 new-arrivals">
         <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
           <div class="product-list-card-wrapper">
             <div class="card-img-wrapper">
@@ -1176,9 +1459,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_4.png" alt="" />
@@ -1226,9 +1507,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_1.png" alt="" />
@@ -1276,9 +1555,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_2.png" alt="" />
@@ -1326,9 +1603,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="#">
-                    <img src="assets/images/fluent-mdl2_full-view.png">
-                  </a>
+                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
                 </li>
               </ul>
               <img src="assets/images/product-list/image_3.png" alt="" />
@@ -1366,8 +1641,22 @@
   </section>
 
 
-
-
+  <!-- Search Modal -->
+  <div class="modal fade searchpopup" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="search_btn border-0" type="button" id="button-addon2">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -1381,54 +1670,65 @@
     <div class="footer-top">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-md-8 col-12">
-            <div class="row">
+          <div class="box-left">
 
-              <div class="col-lg-4 col-md-6 col-12">
-                <div class="single-footer f-about">
-                  <div class="logo">
-                    <a href="index.html">
-                      <img src="assets/images/soorya_logo.png" alt="#">
-                    </a>
-                  </div>
-                  <p>© 2023 Suryasilksonline.com</p>
-
+            <div class="box box-1">
+              <div class="single-footer f-about">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/soorya_logo.png" alt="#">
+                  </a>
                 </div>
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <!-- Single Widget -->
-                <div class="single-footer f-link">
+                <p>Customer Support: 10 AM TO 6 PM</p>
+                <p>© 2023 Suryasilksonline.com</p>
 
-                  <ul>
-                    <li><a href="javascript:void(0)">About Us</a></li>
-                    <li><a href="javascript:void(0)">Trends of Fashion's</a></li>
-                    <li><a href="javascript:void(0)">Career</a></li>
-                    <li><a href="javascript:void(0)">Contact Information</a></li>
-                  </ul>
-                </div>
-                <!-- End Single Widget -->
-              </div>
-              <div class="col-lg-4 col-md-6 col-12">
-                <!-- Single Widget -->
-                <div class="single-footer f-link">
 
-                  <ul>
-                    <li><a href="javascript:void(0)">Privacy Policy</a></li>
-                    <li><a href="javascript:void(0)">Terms of Service</a></li>
-                    <li><a href="javascript:void(0)">Refund policy</a></li>
-                    <li><a href="javascript:void(0)">Shipping Policy</a></li>
-                  </ul>
-                </div>
-                <!-- End Single Widget -->
               </div>
             </div>
+            <div class="box box-2">
+              <!-- Single Widget -->
+              <div class="single-footer f-link">
+                <h5>CUSTOMER CARE</h5>
+                <ul>
+                  <li><a href="tel+919495975579"><i class="me-2"><img
+                          src="assets/images/call-ic.png"></i>+919495975579</a></li>
+                  <li><a href="mailto:info@suryasilksonline.com"><i class="me-2"><img
+                          src="assets/images/mail_ic.png"></i>Trends of Fashion's</a></li>
+                  <li><a href="#"><i class="me-2"><img src="assets/images/headphone_ic.png"></i>10 AM TO 6 PM</a></li>
+                </ul>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="box box-3">
+              <!-- Single Widget -->
+              <div class="single-footer f-link">
+                <div class="d-flex">
+                  <ul class="col">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Trends of Fashion's</a></li>
+                    <li><a href="#">Career</a></li>
+                  </ul>
+                  <ul class="col">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Single Widget -->
+            </div>
           </div>
-          <div class="col-lg-4 col-md-4 col-12">
+          <div class="box-right">
             <!-- Single Widget -->
-            <h3>EXPERIENCE SURYA SILKS APP ON MOBILE</h3>
-            <a href="">
-              <img src="assets/images/playstore.png">
-            </a>
+            <h3 class="mb-2">EXPERIENCE SURYA SILKS APP ON MOBILE</h3>
+            <ul class="download_app">
+              <li><a href="#"><img src="assets/images/google-play.png" alt="google-play"></a></li>
+              <li>
+                <a href="#"><img src="assets/images/app-store.png" alt="app-store"></a>
+              </li>
+            </ul>
 
             <div class="w-100 follow">
               <p>Follow Us</p>
@@ -1466,9 +1766,13 @@
   </a>
 
   <!-- ========================= JS here ========================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main2.js"></script>
 
   <!-- Initialize Swiper -->
   <script>
@@ -1512,6 +1816,111 @@
       },
     });
   </script>
+
+<script>
+  var flashslider = new Swiper(".flash-product-block", {
+    slidesPerView:2,
+    spaceBetween: 10,
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+
+<script>
+  var under599 = new Swiper(".under599", {
+    slidesPerView:1.5,
+    spaceBetween: 10,
+    centeredSlides: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // Makes dots clickable for navigation
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2.5,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+<script>
+  var locationslider = new Swiper(".location-slider", {
+    slidesPerView:2,
+    spaceBetween: 10,
+    centeredSlides: false,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true, // Makes dots clickable for navigation
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+
+  <script>
+    $(document).ready(function () {
+      const countdownDays = 7;
+      const startDate = new Date("2024-11-01T00:00:00").getTime();
+      const now = new Date().getTime();
+
+      let countdownDate = startDate + (Math.floor((now - startDate) / (countdownDays * 24 * 60 * 60 * 1000)) + 1) * (countdownDays * 24 * 60 * 60 * 1000);
+
+      const countdownFunction = setInterval(function () {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        $("#days").text(days);
+        $("#hours").text(hours);
+        $("#minutes").text(minutes);
+        $("#seconds").text(seconds);
+
+        if (distance < 0) {
+          countdownDate += countdownDays * 24 * 60 * 60 * 1000;
+        }
+      }, 1000);
+    });
+  </script>
+
 </body>
 
 </html>

@@ -12,10 +12,10 @@
   <!-- ========================= CSS here ========================= -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/res.css" />
   <link rel="stylesheet" href="assets/css/menu.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
@@ -143,7 +143,6 @@
   </header>
   <!-- End Header Area -->
 
-
   <div class="site-mobile-menu">
     <div class="site-mobile-menu-header">
       <div class="site-mobile-menu-close mt-3">
@@ -168,6 +167,8 @@
           </div>
         </div>
       </div>
+      <div class="swiper-pagination"></div>
+
     </div>
   </section>
   <!-- End Hero Area -->
@@ -279,8 +280,6 @@
     </div>
   </section>
 
-
-
   <section class="flash-sale">
     <div class="container">
       <div class="wrap radius-25">
@@ -294,63 +293,60 @@
             <span id="seconds"></span><span class="unit">s</span>
           </div>
         </div>
-          <div class="swiper flash-product-block">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide box-wrap">
-                <div class="flash-box">
-                  <img src="assets/images/winter-fit-01.jpg" alt="image">
-                  <div class="overlay-box bg-color-1 text-center">WINTER FIT</div>
-                </div>
-                <div class="current-price">
-                  ₹400 <span class="actual-price">₹900</span>
-                  <span class="offer-text">56% off</span>
-                </div>
+        <div class="swiper flash-product-block">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide box-wrap">
+              <div class="flash-box">
+                <img src="assets/images/winter-fit-01.jpg" alt="image">
+                <div class="overlay-box bg-color-1 text-center">WINTER FIT</div>
               </div>
-
-              <div class="swiper-slide box-wrap">
-                <div class="flash-box">
-                  <img src="assets/images/winter-fit-02.jpg" alt="image">
-                  <div class="overlay-box bg-color-2 text-center">WINTER FIT</div>
-                </div>
-                <div class="current-price">
-                  ₹400 <span class="actual-price">₹900</span>
-                  <span class="offer-text">56% off</span>
-                </div>
+              <div class="current-price">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
               </div>
-
-              <div class="swiper-slide box-wrap">
-                <div class="flash-box">
-                  <img src="assets/images/winter-fit-03.jpg" alt="image">
-                  <div class="overlay-box bg-color-3 text-center">WINTER FIT</div>
-                </div>
-                <div class="current-price">
-                  ₹400 <span class="actual-price">₹900</span>
-                  <span class="offer-text">56% off</span>
-                </div>
-              </div>
-
-              <div class="swiper-slide box-wrap">
-                <div class="flash-box">
-                  <img src="assets/images/winter-fit-01.jpg" alt="image">
-                  <div class="overlay-box bg-color-4 text-center">WINTER FIT</div>
-                </div>
-                <div class="current-price">
-                  ₹400 <span class="actual-price">₹900</span>
-                  <span class="offer-text">56% off</span>
-                </div>
-              </div>
-
             </div>
+
+            <div class="swiper-slide box-wrap">
+              <div class="flash-box">
+                <img src="assets/images/winter-fit-02.jpg" alt="image">
+                <div class="overlay-box bg-color-2 text-center">WINTER FIT</div>
+              </div>
+              <div class="current-price">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide box-wrap">
+              <div class="flash-box">
+                <img src="assets/images/winter-fit-03.jpg" alt="image">
+                <div class="overlay-box bg-color-3 text-center">WINTER FIT</div>
+              </div>
+              <div class="current-price">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </div>
+            </div>
+
+            <div class="swiper-slide box-wrap">
+              <div class="flash-box">
+                <img src="assets/images/winter-fit-01.jpg" alt="image">
+                <div class="overlay-box bg-color-4 text-center">WINTER FIT</div>
+              </div>
+              <div class="current-price">
+                ₹400 <span class="actual-price">₹900</span>
+                <span class="offer-text">56% off</span>
+              </div>
+            </div>
+
           </div>
-          <div class="text-center">
-            <a href="#" class="view_all mt-md-5 mt-2">View All</a>
-          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="view_all mt-md-5 mt-2">View All</a>
+        </div>
 
       </div>
   </section>
-
-
-
 
   <section class="bestsellers mt-sm-5 mt-4">
     <div class="container position-relative">
@@ -565,48 +561,48 @@
           <h3 class="custom-color">Women Collections</h3>
         </div>
         <div class="block">
-        <div class="row">
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+          <div class="row">
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="col-md-3 col-6">
+              <div class="c-box">
+                <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
+              </div>
             </div>
           </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="col-md-3 col-6">
-            <div class="c-box">
-              <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-        </div>
         </div>
       </div>
 
@@ -623,51 +619,51 @@
           <h3 class="custom-color">Under 599 - Women Collection</h3>
         </div>
         <div class="block">
-        <div class="swiper under599">
-          <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+          <div class="swiper under599">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-01.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="c-box">
+                  <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
+                </div>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-02.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-03.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-04.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-05.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-06.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-07.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="c-box">
-              <img src="assets/images/offer-img-08.jpg" alt="image" class="w-100 radius-25">
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        </div>
         </div>
       </div>
 
@@ -879,76 +875,75 @@
     </div>
   </section>
 
-
-  <section class="mens-collection-offers mt-3 mb-sm-5 mb-3">
+  <section class="mens-collection-offers mt-3 mb-sm-5 mb-4">
     <div class="container position-relative">
-    <div class="title_block justify-content-center custom_bg2 custom_title_block">
-      <h3 class="custom-color">Mens Collections</h3>
+      <div class="title_block justify-content-center custom_bg2 custom_title_block">
+        <h3 class="custom-color">Mens Collections</h3>
+      </div>
+      <div class="offer-ad-3 mt-4">
+        <img src="assets/images/offer-banner-3.jpg" alt="image" class="w-100 radius-25">
+      </div>
+      <div class="offer-ad-4 mt-3">
+        <img src="assets/images/offer-banner-4.jpg" alt="image" class="w-100 radius-25">
+      </div>
+      <div class="offer-ad-5 mt-3">
+        <img src="assets/images/offer-banner-5.jpg" alt="image" class="w-100 radius-25">
+      </div>
     </div>
-    <div class="offer-ad-3 mt-4">
-      <img src="assets/images/offer-banner-3.jpg" alt="image" class="w-100 radius-25">
-    </div>
-    <div class="offer-ad-4 mt-3">
-      <img src="assets/images/offer-banner-4.jpg" alt="image" class="w-100 radius-25">
-    </div>
-    <div class="offer-ad-5 mt-3">
-      <img src="assets/images/offer-banner-5.jpg" alt="image" class="w-100 radius-25">
-    </div>
-  </div>
   </section>
 
   <section class="under-599 collection-box">
     <div class="container position-relative">
-    <div class="title_block justify-content-center custom_bg2 custom_title_block">
-      <h3 class="custom-color">Under 599 - Men Collection</h3>
-    </div>
-    <div class="block">
-    <div class="swiper under599">
-      <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
+      <div class="title_block justify-content-center custom_bg2 custom_title_block">
+        <h3 class="custom-color">Under 599 - Men Collection</h3>
+      </div>
+      <div class="block">
+        <div class="swiper under599">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="c-box">
+                <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-01.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-02.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-03.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="c-box">
-          <img src="assets/images/mens-offer-04.jpg" alt="image" class="w-100 radius-25">
-        </div>
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-    </div>
-    </div>
     </div>
   </section>
 
@@ -1164,10 +1159,8 @@
     </div>
   </section>
 
-
-
   <div class="container">
-  <div class="bg_02 p-3 p-md-5 block-add radius-25">
+    <div class="bg_02 p-3 p-md-5 block-add radius-25">
       <div class="row">
         <div class="col-md-6 col-12">
           <a href="#">
@@ -1183,61 +1176,135 @@
     </div>
   </div>
 
-
-  <section class="weare-everyone">
+  <section class="weare-everyone mt-sm-5 mt-4 mb-sm-5 mb-4">
     <div class="container position-relative">
-      <div class="wrap custom_bg3 radius-20">
+      <div class="wrap custom_bg3 radius-25">
         <h3 class="mb-3">We are Everywhere!</h3>
         <div class="swiper location-slider">
-          <div class="swiper-wrapper">
-          <div class="swiper-slide location-place-img position-relative">
-            <img src="assets/images/surya-kannur-1.png" alt="image">
-            <div class="overlay-box-2">Kannur</div>
-          </div>
+          <div class="swiper-wrapper mb-sm-5 mb-4">
 
-          <div class="swiper-slide location-place-img position-relative">
-            <img src="assets/images/surya-kannur-2.jpg" alt="image">
-            <div class="overlay-box-2">Payyanur</div>
-          </div>
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-1.png" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kannur</div>
+            </div>
 
-          <div class="swiper-slide location-place-img position-relative">
-            <img src="assets/images/surya-kannur-3.png" alt="image">
-            <div class="overlay-box-2">Kozhikode</div>
-          </div>
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-2.jpg" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Payyanur</div>
+            </div>
 
-          <div class="swiper-slide location-place-img position-relative">
-            <img src="assets/images/surya-kannur-4.jpg" alt="image">
-            <div class="overlay-box-2">Kannur</div>
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-3.png" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kozhikode</div>
+            </div>
+
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-4.jpg" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kannur</div>
+            </div>
+
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-1.png" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kannur</div>
+            </div>
+
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-2.jpg" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Payyanur</div>
+            </div>
+
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-3.png" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kozhikode</div>
+            </div>
+
+            <div class="swiper-slide location-place-img position-relative">
+              <img src="assets/images/surya-kannur-4.jpg" alt="image" class="radius-25 w-100">
+              <div class="overlay-box-2">Kannur</div>
+            </div>
+
+
           </div>
+          <div class="swiper-pagination"></div>
         </div>
-      </div>
       </div>
     </div>
   </section>
 
+  <div class="brand-sldier-wrap">
+    <div class="container">
+      <div class="swiper brand-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/puma-01.png" alt="icon">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/zara-logo.png" alt="icon">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/levis-logo.png" alt="icon">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/dior.png" alt="icon">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/adidas-4.png" alt="icon">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="explore_fetive_sollection  mt-sm-5 mt-4 mb-sm-5 mb-4">
+    <div class="container">
+      <div class="wrap shadow radius-25 custom_bg4">
+        <h3>Explore Festive Collections<i class="ms-1"><img src="assets/images/sparkles.png" alt="icon"></i></h3>
+
+        <div class="swiper festive-slider mt-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="assets/images/festive_colection-1.png" alt="icon" class="w-100 radius-25 shadow-lg">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/festive_colection-2.png" alt="icon" class="w-100 radius-25 shadow-lg">
+            </div>
+            <div class="swiper-slide">
+              <img src="assets/images/festive_colection-3.png" alt="icon" class="w-100 radius-25 shadow-lg">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="offer-slider-2-half-wrap">
+    <div class="container">
+      <div class="swiper offer-slider-2-half">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/images/offer_slide1.jpg" alt="image" class="w-100">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/offer_slide2.jpg" alt="image" class="w-100">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/images/offer_slide3.jpg" alt="image" class="w-100">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <section class="item_cart mt-sm-5 mt-4">
 
-
-
-
-
-
-
-
-
-  <section class="py-4 py-md-5">
-
-    <div class="container position-relative ">
-
-
+    <div class="container position-relative">
 
       <div class="title_block">
-        <h3>Best Sellers</h3>
+        <h3>Items In Cart</h3>
 
         <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
       </div>
-
 
       <div class="row mt-3 mb-md-3 mb-3 best-sellers">
         <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
@@ -1436,210 +1503,81 @@
 
 
       </div>
-      <div class="title_block">
-        <h3>New Arrivals</h3>
-
-        <a class="more_buttion" href="products.html">View All <img src="assets/images/right.png"></a>
-      </div>
-
-
-      <div class="row mt-3 new-arrivals">
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_4.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_1.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6  col-lg-3  mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_2.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mb-3 mb-md-4">
-          <div class="product-list-card-wrapper">
-            <div class="card-img-wrapper">
-              <ul class="card_hover">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/humbleicons_cart.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/ph_heart-bold.png">
-                  </a>
-                </li>
-                <li>
-                  <a href="products-details.html"><img src="assets/images/fluent-mdl2_full-view.png"></a>
-                </li>
-              </ul>
-              <img src="assets/images/product-list/image_3.png" alt="" />
-            </div>
-            <div>
-              <div class="star-ratig-wrapper mt-3 d-flex gap-3">
-                <p class="star-rating">
-                  4.5
-                  <span class="star-icon"><img src="assets/images/product-list/pink_star.png" alt="" /></span>
-                </p>
-                <p class="star-text">(1750)</p>
-              </div>
-              <h6 class="card-title mt-3">
-                Men's Graphic Oversized T-Shirt
-              </h6>
-              <div class="color-select-wrapper d-flex gap-2 mt-3">
-
-                <input class="color-select color-1" type="checkbox">
-                <input class="color-select color-2" type="checkbox">
-                <input class="color-select color-3" type="checkbox">
-                <input class="color-select color-4" type="checkbox">
-                <input class="color-select color-5" type="checkbox">
-                <input class="color-select color-6" type="checkbox">
-
-              </div>
-              <p class="current-price mt-3">
-                ₹400 <span class="actual-price">₹900</span>
-                <span class="offer-text">56% off</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
+  <div class="offer-slider-3-wrap mb-sm-5 mb-4">
+    <div class="container">
+      <div class="wrap custom_bg5 radius-25">
+        <div class="swiper offer-slider-3">
+          <div class="swiper-wrapper mb-sm-5 mb-4">
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-09.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-10.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-11.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-12.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-09.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-11.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="offer-slider-3-wrap mb-sm-5 mb-4">
+    <div class="container">
+      <div class="wrap custom_bg6 radius-25">
+        <div class="swiper offer-slider-4">
+          <div class="swiper-wrapper mb-sm-5 mb-4">
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-13.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-14.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-15.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-16.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+            <div class="swiper-slide">
+              <img src="assets/images/offer-img-13.jpg" alt="image" class="radius-25 w-100">
+            </div>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Search Modal -->
   <div class="modal fade searchpopup" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
@@ -1658,11 +1596,7 @@
     </div>
   </div>
 
-
-
-
   <!-- End Features Area -->
-
 
   <!-- Start Footer Area -->
   <footer class="footer">
@@ -1676,7 +1610,7 @@
               <div class="single-footer f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="assets/images/soorya_logo.png" alt="#">
+                    <img src="assets/images/soorya_logo.png" alt="logo">
                   </a>
                 </div>
                 <p>Customer Support: 10 AM TO 6 PM</p>
@@ -1756,6 +1690,19 @@
         </div>
       </div>
     </div>
+    <div class="surya-locations">
+      <div class="container">
+        <ul>
+          <li><a href="#">SURYA SILKS KANNUR</a></li>
+          <li><a href="#">SURYA SILKS KOZHIKODE</a></li>
+          <li><a href="#">SURYA SILKS VATAKARA</a></li>
+          <li><a href="#">SURYA SILKS THRISSUR</a></li>
+          <li><a href="#">SURYA SILKS IRITTY</a></li>
+          <li><a href="#">SURYA SILKS PAYYANNUR</a></li>
+        </ul>
+      </div>
+    </div>
+
     <!--/ End Footer Top -->
   </footer>
   <!--/ End Footer Area -->
@@ -1776,7 +1723,12 @@
 
   <!-- Initialize Swiper -->
   <script>
-    var swiper = new Swiper(".mySwiper", {});
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // Makes dots clickable for navigation
+      },
+    });
   </script>
   <script type="text/javascript">
 
@@ -1817,79 +1769,192 @@
     });
   </script>
 
-<script>
-  var flashslider = new Swiper(".flash-product-block", {
-    slidesPerView:2,
-    spaceBetween: 10,
-    breakpoints: {
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 20,
+  <script>
+    var flashslider = new Swiper(".flash-product-block", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+    });
+  </script>
+
+  <script>
+    var brandslider = new Swiper(".brand-slider", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
       },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-    },
-  });
-</script>
+    });
+  </script>
 
 
-<script>
-  var under599 = new Swiper(".under599", {
-    slidesPerView:1.5,
-    spaceBetween: 10,
-    centeredSlides: false,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true, // Makes dots clickable for navigation
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 2.5,
-        spaceBetween: 20,
+  <script>
+    var festiveslider = new Swiper(".festive-slider", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
       },
-      768: {
-        slidesPerView: 3.5,
-        spaceBetween: 30,
-      },
-      1024: {
-        slidesPerView: 3.5,
-        spaceBetween: 30,
-      },
-    },
-  });
-</script>
+    });
+  </script>
 
-<script>
-  var locationslider = new Swiper(".location-slider", {
-    slidesPerView:2,
-    spaceBetween: 10,
-    centeredSlides: false,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true, // Makes dots clickable for navigation
-    },
-    breakpoints: {
-      640: {
-        slidesPerView: 3,
-        spaceBetween: 20,
+  <script>
+    var offersliderhalf = new Swiper(".offer-slider-2-half", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
       },
-      768: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+    });
+  </script>
+
+  <script>
+    var offerslider3 = new Swiper(".offer-slider-3", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // Makes dots clickable for navigation
       },
-      1024: {
-        slidesPerView: 4,
-        spaceBetween: 30,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
       },
-    },
-  });
-</script>
+    });
+  </script>
+
+  <script>
+    var offerslider4 = new Swiper(".offer-slider-4", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // Makes dots clickable for navigation
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    var under599 = new Swiper(".under599", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      centeredSlides: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // Makes dots clickable for navigation
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2.5,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 30,
+        },
+        1024: {
+          slidesPerView: 3.5,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <script>
+    var locationslider = new Swiper(".location-slider", {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+      centeredSlides: false,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true, // Makes dots clickable for navigation
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+        992: {
+          slidesPerView: 3.5,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4.5,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
 
 
   <script>

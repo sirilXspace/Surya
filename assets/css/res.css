@@ -95,6 +95,13 @@
     .actual-price{font-size:18px;}
     .offer-text{font-size:16px;}
     .view_all{font-size:18px;}
+    .weare-everyone .overlay-box-2{font-size:18px;height:45px;line-height:45px;}
+    .footer .single-footer.f-about p{font-size:11px;margin-top:10px;}
+    .footer .single-footer.f-link li a{font-size:11px;}
+    .footer .single-footer.f-link li{margin-bottom:10px;}
+    .footer h3{font-size:14px;}
+    .social_media li a img{width:70px;}
+    
 
 }
 
@@ -192,6 +199,11 @@
     .flash-sale .wrap{padding:50px 30px}
     .unit{margin-right:15px;}
     #countdown{font-size:28px;line-height:28px;}
+    .footer-top .box-left{width:100%;}
+    .footer-top .box-right{width:100%;text-align: center;margin-top:15px;}
+    .social_media{justify-content:center;}
+    .social_media li{margin-right:2%;}
+    .footer .surya-locations ul li a{font-size:11px;padding:0px 10px}
 }
 
 @media (min-width: 768px) {
@@ -398,14 +410,6 @@
         margin-bottom: 6px;
     }
 
-    .footer .single-footer.f-link li a {
-        font-size: 13px;
-    }
-
-    .footer .single-footer {
-        margin-top: 20px;
-    }
-
     .address-option label {
         font-size: 13px;
     }
@@ -468,6 +472,24 @@
       .under599 .c-box{margin-bottom:2.5rem;}
       .custom_title_block{padding:15px 15px}
       .flash-sale{margin-top:20px;}
+      .weare-everyone .wrap{padding:20px 20px}
+      .weare-everyone .overlay-box-2{font-size:16px;}
+      .explore_fetive_sollection .wrap{padding:20px 20px}
+      .offer-slider-3-wrap .wrap{padding:20px 20px}
+      .footer-top .box{width:50%;}
+      .footer .single-footer{margin-top:0px;}
+      .footer-top .box-3{width:100%;margin-top:15px;}
+      .footer .surya-locations ul li{width:50%;}
+      .surya-locations ul {
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        justify-content: center; /* Centers the content */
+      }
+    
+      .surya-locations ul li {
+        flex: 1 1 48%; /* Adjusts to 48% width for two items per row */
+      }
+      .footer .surya-locations ul li:after{display:none;}
+      .footer .footer-top{padding:30px 0;}
 }
 
 

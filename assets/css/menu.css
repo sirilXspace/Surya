@@ -6,8 +6,8 @@ body.offcanvas-menu:before {
 .site-navbar {
   margin-bottom: 0px;
   z-index: 199;
-  /*position: absolute;*/
-  top: 2rem;
+  position: relative;
+  /*top: 2rem;*/
   width: 100%;
 }
 

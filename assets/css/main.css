@@ -2758,8 +2758,7 @@ ol {
 .footer .single-footer.f-link li a {
   font-size: 15px;
   font-weight: normal;
-  color: #333333;
-  ;
+  color: rgba(34, 34, 34, .8);
 }
 
 .footer .single-footer.f-link li a:hover {
@@ -3173,7 +3172,7 @@ input[type="checkbox"].color-select:checked::before {
 }
 
 .inner-page {
-  margin-top: 90px;
+  /*margin-top: 90px;*/
 }
 
 .breadcrumb1 {
@@ -4973,12 +4972,15 @@ ul.download_app li{display:inline-block;}
   padding: 0;
   margin: 0;
   list-style: none;
+  justify-content:center;
 }
 .footer .surya-locations ul li{ flex: 0 0 auto;white-space: nowrap;position: relative;}
 .footer .surya-locations ul li:after{content:"|";position: absolute;right: 0;top:0px;color:#fff;}
 .footer .surya-locations ul li:last-child::after{display: none;}
 .surya-locations ul li:last-child {margin-right: 0; /* No margin after the last item */}
-.footer .surya-locations ul li a{color:#FFFFFF;font-size:13px;padding:0px 30px;word-break: normal;}
+.footer .surya-locations ul li a{color:rgb(255, 255, 255,.8);font-size:13px;padding:0px 30px;word-break: normal;}
 
 .hero-area .swiper-pagination-bullet{background-color:#fff;opacity: 1;height:7px;border-radius:5px;}
 .hero-area .swiper-pagination-bullet-active{background-color:#FF406C;width:30px;height:7px;margin-top:2px;}
+.custom_bg6{background: rgb(205,165,136);background: linear-gradient(301deg, rgba(205,165,136,1) 0%, rgba(243,149,95,1) 100%);}
+.offer-4-wrap .offer-4{padding:30px 30px}

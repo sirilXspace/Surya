@@ -4915,7 +4915,7 @@ ul.download_app li{display:inline-block;}
   .bg-color-4{background-color:rgba(159, 166, 150, 0.6);}
   .flash-box img{border-top-left-radius:20px;border-top-right-radius:20px;}
   .flash-product-block .box-wrap .current-price{border-bottom-left-radius:20px;border-bottom-right-radius:20px;background-color:#fff;padding:10px 15px}
-  .custom-color{color:#E7C60C;}
+  .custom-color{color:rgba(231, 132, 12, 1);}
   .custom_bg{background-image:url(../images/title_bg.png);background-repeat: no-repeat;background-size: cover;}
   .custom_title_block{padding:20px 20px;border-top-left-radius:20px;border-top-right-radius:20px;}
   .collection-box .block{padding:30px 40px;background-color:#ffe8c8;border-bottom-left-radius:20px;border-bottom-right-radius: 20px;}
@@ -4982,5 +4982,5 @@ ul.download_app li{display:inline-block;}
 
 .hero-area .swiper-pagination-bullet{background-color:#fff;opacity: 1;height:7px;border-radius:5px;}
 .hero-area .swiper-pagination-bullet-active{background-color:#FF406C;width:30px;height:7px;margin-top:2px;}
-.custom_bg6{background: rgb(205,165,136);background: linear-gradient(301deg, rgba(205,165,136,1) 0%, rgba(243,149,95,1) 100%);}
+.custom_bg7{background:url(../images/custom_bg7.png) no-repeat;background-size: cover;}
 .offer-4-wrap .offer-4{padding:30px 30px}

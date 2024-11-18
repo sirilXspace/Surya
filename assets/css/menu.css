@@ -318,7 +318,7 @@ body.offcanvas-menu:before {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   position: relative;
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 0px;
   height: calc(100vh - 52px);
   padding-bottom: 150px;
 }

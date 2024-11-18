@@ -3361,14 +3361,16 @@ input[type="checkbox"].color-select:checked::before {
   border-top: 1px solid #DFDFDF;
   border-bottom: 1px solid #DFDFDF;
 }
-
+/*
 .custom_accordion .accordion-button:not(.collapsed) {
   color: #222222;
   background-color: #DFDFDF;
 }
+  */
 
 .custom_accordion .accordion-collapse {
-  border: none;
+  border-left: none;
+  border-right:none;
 }
 
 .custom_accordion .accordion-item:first-of-type .accordion-button {
@@ -3383,6 +3385,7 @@ input[type="checkbox"].color-select:checked::before {
 
 .accordion-button:not(.collapsed) {
   background-image: url(../images/ic_baseline-minus.svg);
+  background-position: right;
   /*transform: rotate(180deg);*/
 }
 
@@ -3391,13 +3394,13 @@ input[type="checkbox"].color-select:checked::before {
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform .2s ease-in-out;
-  background-position: center right 10px;
+  background-position: center right 0px;
 }
-
+/*
 .custom_accordion .accordion-button:last-child {
   border-bottom: none;
 }
-
+*/
 
 .product-slider {
   display: flex;
@@ -4201,7 +4204,8 @@ h4.inner-title {
 
 .accordion-button:not(.collapsed) {
   color: #e6005c;
-  background-color: #f8f9fa;
+  /*background-color: #f8f9fa;*/
+  background-color: transparent;
 }
 
 .accordion-button::after {
@@ -4984,3 +4988,36 @@ ul.download_app li{display:inline-block;}
 .hero-area .swiper-pagination-bullet-active{background-color:#FF406C;width:30px;height:7px;margin-top:2px;}
 .custom_bg7{background:url(../images/custom_bg7.png) no-repeat;background-size: cover;}
 .offer-4-wrap .offer-4{padding:30px 30px}
+.item-selected{position: absolute;left:5px;top:5px;}
+.item-all-selected label{font-size:18px;font-weight:600;}
+.empty-page{padding:80px 80px}
+.empty-page h4{color:#222222;font-size:24px;font-weight:600;text-transform: uppercase;}
+.btn-wishlist{
+  padding: 10px 25px;
+  border: 1px solid #FF406C;
+  border-radius: 5px;
+  color:#FF406C;
+  font-weight:600;
+  }
+  .btn-wishlist:hover{color:#fff;background-color:#FF406C}
+  .continue-shop{color:#222222;font-size:16px;font-weight:600;}
+  .inner-banner{position: relative;display:flex;justify-content: center;align-items: center;}
+  .inner-banner img{height:210px;object-fit: cover;}
+  .inner-banner h1{font-size:50px;color:#fff;font-weight:600;text-transform:uppercase;}
+  .banner-title{position: absolute;z-index: 55;}
+  .my-account .wrapper{max-width:700px;margin-left: auto;margin-right: auto;}
+  .my-account .wrapper h3{font-size:40px;font-weight:500;}
+  .my-account .wrapper h4{font-size:24px;font-weight:400;}
+  .custom-pad{padding-top:50px;padding-bottom:50px;}
+  .clabel{color:#222222;font-size:18px;font-weight:500;}
+  .theme-color{background-color:#FF406C;color:#fff;font-weight:500;font-size:18px;}
+  .theme-color:hover{color:#fff;}
+  .input-group-text{background-color: transparent;}
+  .dont-have{color:rgb(34, 34, 34,0.5);font-size:16px;}
+  .dont-have a{font-weight:500;color:#222222;}
+  .theme-text{color:#FF406C;}
+  .theme-text:hover{color:#FF406C;}
+  .terms{font-size:16px;}
+  .categories-type .form-check-label{font-weight:600;}
+  .filters .accordion-body{padding:1rem 0rem;}
+  .filters .accordion-button{padding:1rem 0rem;}

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <title>Surya</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+
+  <!-- ========================= CSS here ========================= -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="assets/css/res.css" />
+  <link rel="stylesheet" href="assets/css/menu.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-icon">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- /End Preloader -->
+
+  <!-- Start Header Area -->
+  <header class="header site-navbar navbar-area">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12">
+          <div class="nav-inner">
+            <!-- Start Navbar -->
+            <div class="d-flex justify-content-between align-items-center">
+              <a class="navbar-brand" href="index.html">
+                <img src="assets/images/soorya_logo.png" alt="Logo">
+              </a>
+
+              <div class="d-none d-xl-block menu-wrap">
+                <nav class="site-navigation position-relative text-right" role="navigation">
+
+                  <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                    <li class="has-children">
+                      <a href="#"><span>WOMEN</span></a>
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                        <li class="has-children">
+                          <a href="#">Dropdown</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                            <li><a href="#">Menu Four</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="has-children">
+                      <a href="#"><span>MEN</span></a>
+                      <ul class="dropdown arrow-top">
+                        <li><a href="#">Menu One</a></li>
+                        <li><a href="#">Menu Two</a></li>
+                        <li><a href="#">Menu Three</a></li>
+                        <li class="has-children">
+                          <a href="#">Dropdown</a>
+                          <ul class="dropdown">
+                            <li><a href="#">Menu One</a></li>
+                            <li><a href="#">Menu Two</a></li>
+                            <li><a href="#">Menu Three</a></li>
+                            <li><a href="#">Menu Four</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a href="#"><span>KIDS</span></a></li>
+                    <li><a href="#"><span>CATEGORY</span></a></li>
+                    <li><a href="#"><span>WEDDING</span></a></li>
+                  </ul>
+                </nav>
+              </div>
+
+
+
+              <div class="button add-list-button">
+                <ul class="right_side_ul">
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_01.svg" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_03.svg">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_02.svg">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="assets/images/icn_04.svg"> <span class="signin_text">Sign in</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto"><a href="#"
+                  class="site-menu-toggle js-menu-toggle"><span class="icon-menu"><i
+                      class="fa-solid fa-bars"></i></span></a></div>
+
+
+            </div>
+            <!-- End Navbar -->
+          </div>
+        </div>
+      </div> <!-- row -->
+    </div> <!-- container -->
+  </header>
+  <!-- End Header Area -->
+
+  <div class="site-mobile-menu">
+    <div class="site-mobile-menu-header">
+      <div class="site-mobile-menu-close mt-3">
+        <span class="icon-close2 js-menu-toggle"><i class="fa-solid fa-xmark"></i></span>
+      </div>
+    </div>
+    <div class="site-mobile-menu-body"></div>
+  </div>
+
+
+  <!-- Search Modal -->
+  <div class="modal fade searchpopup" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="search_btn border-0" type="button" id="button-addon2">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--<div class="d-flex border_top shadow"></div>-->
+
+  <div class="inner-page custompad custom_border_shaodw">
+    <div class="container">
+
+
+      <div class="my-account custom-pad">
+
+        <div class="inner-banner">
+          <img src="assets/images/my-account-banner.jpg" alt="banner">
+          <div class="banner-title">
+            <h1>Account</h1>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="col-12">
+            <div class="card login pt-5 border-0">
+              <h3 class="text-center mb-sm-3 mb-2">Login Account</h3>
+              <h4 class="text-center text-muted mb-sm-4 mb-3">Please Enter Login Account Detail</h4>
+              <form>
+                <div class="mb-3">
+                  <label class="form-label clabel mb-1">Mobile Number</label>
+                  <div class="input-group gap-3">
+                    <span class="input-group-text">+91</span>
+                    <input type="text" class="form-control" id="mobileNumber" placeholder="Enter your mobile number"
+                      required>
+                  </div>
+                </div>
+                <button type="submit" class="w-100 btn theme-color">Continue</button>
+                <div class="dont-have text-center mt-3">
+                  <p class="mb-0">Don't have an account? <a href="#">Create account</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+  </div>
+
+
+
+
+  <!-- Start Footer Area -->
+  <footer class="footer">
+    <!-- Start Footer Top -->
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="box-left">
+
+            <div class="box box-1">
+              <div class="single-footer f-about">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="assets/images/soorya_logo.png" alt="logo">
+                  </a>
+                </div>
+                <p>Customer Support: 10 AM TO 6 PM</p>
+                <p>© 2023 Suryasilksonline.com</p>
+
+
+              </div>
+            </div>
+            <div class="box box-2">
+              <!-- Single Widget -->
+              <div class="single-footer f-link">
+                <h5>CUSTOMER CARE</h5>
+                <ul>
+                  <li><a href="tel+919495975579"><i class="me-2"><img
+                          src="assets/images/call-ic.png"></i>+919495975579</a></li>
+                  <li><a href="mailto:info@suryasilksonline.com"><i class="me-2"><img
+                          src="assets/images/mail_ic.png"></i>info@suryasilksonline.com</a></li>
+                  <li><a href="#"><i class="me-2"><img src="assets/images/headphone_ic.png"></i>10 AM TO 6 PM</a></li>
+                </ul>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+            <div class="box box-3">
+              <!-- Single Widget -->
+              <div class="single-footer f-link">
+                <div class="d-flex">
+                  <ul class="col">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Trends of Fashion's</a></li>
+                    <li><a href="#">Career</a></li>
+                  </ul>
+                  <ul class="col">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Refund policy</a></li>
+                    <li><a href="#">Shipping Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- End Single Widget -->
+            </div>
+          </div>
+          <div class="box-right">
+            <!-- Single Widget -->
+            <h3 class="mb-2">EXPERIENCE SURYA SILKS APP ON MOBILE</h3>
+            <ul class="download_app">
+              <li><a href="#"><img src="assets/images/google-play.png" alt="google-play"></a></li>
+              <li>
+                <a href="#"><img src="assets/images/app-store.png" alt="app-store"></a>
+              </li>
+            </ul>
+
+            <div class="w-100 follow">
+              <p>Follow Us</p>
+              <ul class="social_media">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/fb.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/tw.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/in.png">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Single Widget -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="surya-locations">
+      <div class="container">
+        <ul>
+          <li><a href="#">SURYA SILKS KANNUR</a></li>
+          <li><a href="#">SURYA SILKS KOZHIKODE</a></li>
+          <li><a href="#">SURYA SILKS VATAKARA</a></li>
+          <li><a href="#">SURYA SILKS THRISSUR</a></li>
+          <li><a href="#">SURYA SILKS IRITTY</a></li>
+          <li><a href="#">SURYA SILKS PAYYANNUR</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--/ End Footer Top -->
+  </footer>
+  <!--/ End Footer Area -->
+
+  <!-- ========================= scroll-top ========================= -->
+  <a href="#" class="scroll-top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- ========================= JS here ========================= -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.sticky.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main2.js"></script>
+
+</body>
+
+</html>

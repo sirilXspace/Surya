@@ -158,6 +158,19 @@ ol {
   list-style-type: none;
 }
 
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  font-size: 14px;
+}
+
+::placeholder {
+  font-size: 14px;
+}
+
 .mt-5 {
   margin-top: 5px;
 }
@@ -1419,8 +1432,10 @@ ol {
   width: 100%;
   left: 0;
   top: 0;
+  /*
   padding-top:20px;
   padding-bottom:20px;
+  */
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -1429,9 +1444,6 @@ ol {
     background-color: #000;
   }
 
-  .header .button {
-    margin: 0 !important;
-  }
 
   .header .navbar-collapse {
     position: absolute;
@@ -1680,9 +1692,6 @@ ol {
     width: 100px;
   }
 
-  .navbar-brand {
-    width: 25%;
-  }
 
   .right_side_ul li {
     padding: 0 3px !important;
@@ -1782,6 +1791,7 @@ ol {
 .navbar-brand {
   padding-left: 0;
   border-radius: 0;
+  margin-right:0px;
 }
 
 .mobile-menu-btn {
@@ -5005,9 +5015,9 @@ ul.download_app li{display:inline-block;}
   .inner-banner img{height:210px;object-fit: cover;}
   .inner-banner h1{font-size:50px;color:#fff;font-weight:600;text-transform:uppercase;}
   .banner-title{position: absolute;z-index: 55;}
-  .my-account .wrapper{max-width:700px;margin-left: auto;margin-right: auto;}
-  .my-account .wrapper h3{font-size:40px;font-weight:500;}
-  .my-account .wrapper h4{font-size:24px;font-weight:400;}
+  .login .wrapper{max-width:700px;margin-left: auto;margin-right: auto;}
+  .login .wrapper h3{font-size:40px;font-weight:500;}
+  .login .wrapper h4{font-size:24px;font-weight:400;}
   .custom-pad{padding-top:50px;padding-bottom:50px;}
   .clabel{color:#222222;font-size:18px;font-weight:500;}
   .theme-color{background-color:#FF406C;color:#fff;font-weight:500;font-size:18px;}
@@ -5021,3 +5031,168 @@ ul.download_app li{display:inline-block;}
   .categories-type .form-check-label{font-weight:600;}
   .filters .accordion-body{padding:1rem 0rem;}
   .filters .accordion-button{padding:1rem 0rem;}
+  .my-account .pro_left{padding:15px 15px}
+  .pro_left h5{font-size:20px;font-weight:600;}
+  .my_profile_link{background:url(../images/bg_color.png);background-repeat: no-repeat;background-size: cover;}
+  .pro_left ul li a{display:block;padding:11px 15px;color:#fff;}
+.edit_details{padding:20px 20px 20px 20px;}
+.promo-container {
+    margin-top:60px;
+    padding:15px 15px;
+    background-color:rgba(148, 155, 227,.2);
+    border-radius:10px;
+}
+.promo-text p {
+    margin-bottom: 15px;
+    font-size:14px;
+}
+.promo-text a {
+    color: #d0021b;
+    font-weight: bold;
+    text-decoration: none;
+}
+.promo-text img {
+    float: right;
+    margin-right: -25px;
+    margin-top: -60px;
+    width: 150px; /* Adjust as needed */
+    border-radius: 10px;
+}
+.pro_ic{border-radius:10px;}
+.edit_details{border-radius:10px;margin-bottom:30px;}
+.edit_details .img-holder{width:150px;}
+.edit_details .con{width:calc(100% - 305px);margin-left:30px;}
+.edit_details h4{font-size:20px;font-weight:600;margin-bottom:10px;}
+.edit_details p{margin-bottom:10px;}
+.edit_details .con p,.edit_details .con a{color:rgb(0, 0, 0,0.8);}
+.btn_style{
+  padding: 10px 20px;  
+  background: rgba(255, 64, 108, 0.1);
+  border-radius: 5px;
+  color:#FF406C;
+  font-weight:600;
+  }
+  .btn_style:hover{color:#FF406C;}
+.bold{font-weight:700;color:rgba(0, 0, 0, 0.8);}
+.address-right h4{font-size:24px;}
+.address-right h4 a{font-size:16px;font-weight:600;color:#FF406C;}
+.custom-label{font-size:18px;font-weight:500;color:rgba(0, 0, 0, 0.8);margin-bottom:15px;}
+
+/*
+.hamburger-menu {
+  position: relative;
+}*/
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding-top:35px;
+  padding-bottom:35px;
+}
+.menu-container {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right:0;
+  width: 100%;
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: row; /* Flex layout for menu */
+  margin-left: auto;
+  margin-right: auto;
+  z-index:55;
+  /*max-height: 0; Initially collapsed */
+  background: #fff; /* Background color of the menu */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
+  /* transition: max-height 0.4s ease; Smooth height transition */
+}
+.menu-container.active {
+  display: flex; /* Display menu when active */
+}
+.menu-left {
+  width: 25%;
+  background: rgb(255 107 129 / 10%);
+  border-right: 1px solid #ddd;
+}
+.menu-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-left li {
+  padding:7px 15px;
+  cursor: pointer;
+  color: #333;
+  font-size:14px;
+}
+.menu-left li.active {
+  background: #FF406C;
+  font-weight: 700;
+  color:#fff;
+}
+.menu-right {
+  width: 75%;
+  padding: 20px;
+  background-color:#fff;
+}
+.menu-right h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.menu-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu-right ul li {
+  padding: 0px 0;
+}
+.menu-right ul li a {
+  text-decoration: none;
+  color: #081828;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.menu-right ul li a:hover {
+  color:#FF406C;
+}
+/*
+.menu-container.active {
+  max-height: auto; /* Set the max height large enough for all content */
+  /* Adjust this value to fit your content */
+
+.menu-toggle {
+  cursor: pointer;
+  position: relative;
+  z-index: 100; /* Ensure the button is always clickable */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust to control column widths */
+  gap: 15px; /* Controls space between items */
+  padding: 0px;
+}
+.grid-item {
+  padding: 0px;
+}
+.grid-item h4 {
+  font-size: 17px;
+  margin-bottom:5px;
+  text-transform: uppercase;
+}
+.grid-item ul {
+  padding: 0;
+  list-style-type: none;
+}
+.grid-item li {
+  margin-bottom: 0px;
+}
+.grid-item li a {
+  text-decoration: none;
+  color: #333;
+}

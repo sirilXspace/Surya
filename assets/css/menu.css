@@ -47,6 +47,7 @@ body.offcanvas-menu:before {
 
 .site-navbar .site-navigation .site-menu {
   margin-bottom: 0;
+  text-align: center;
 }
 
 .site-navbar .site-navigation .site-menu .active>a span {
@@ -66,7 +67,7 @@ body.offcanvas-menu:before {
 }
 
 .site-navbar .site-navigation .site-menu>li>a {
-  padding: 7px 10px;
+  padding: 35px 10px;
   font-size: 16px;
   font-family: "Montserrat", sans-serif;
   color:rgba(34, 34, 34, 1);;
@@ -450,3 +451,7 @@ body.offcanvas-menu:before {
   padding-left: 15px !important;
 }
 .icon-menu .fa-bars{font-size:25px;color:#000;}
+
+@media (max-width: 1600px) {
+  .site-navbar .site-navigation .site-menu>li>a{font-size:14px;}
+}

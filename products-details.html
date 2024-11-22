@@ -806,8 +806,51 @@
                     <div class="rating-review">
                         <div class="d-flex justify-content-between mb-3">
                             <h4>Ratings & Reviews</h4>
-                            <a href="#" class="rate-this-product text-decoration-underline">Rate the Product</a>
+                            <a class="rate-this-product text-decoration-underline" id="showrate">Rate the Product</a>
                         </div>
+                        <div class="post-my-review" style="display:none;">
+                            
+
+
+                          <h5 class="text-center mb-2">Be the first one to review this product!</h5>
+
+                          <h6 class="text-center">Rating</h6>
+
+                          <div class="star-tarind-block d-flex justify-content-center">
+                            <div class="star-rating-2 mt-2">
+                              <input type="radio" id="star5" name="rating" value="5">
+                              <label for="star5" title="5 stars"></label>
+                              
+                              <input type="radio" id="star4" name="rating" value="4">
+                              <label for="star4" title="4 stars"></label>
+                              
+                              <input type="radio" id="star3" name="rating" value="3">
+                              <label for="star3" title="3 stars"></label>
+                              
+                              <input type="radio" id="star2" name="rating" value="2">
+                              <label for="star2" title="2 stars"></label>
+                              
+                              <input type="radio" id="star1" name="rating" value="1">
+                              <label for="star1" title="1 star"></label>
+                            </div>
+                            <!--<p>Your rating: <span id="rating-value">0</span></p>-->
+                          </div>
+
+                          <h6 class="text-center mt-3">Review</h6>
+
+                          <div class="text-area mt-3">
+                            <textarea class="text_fi" rows="3"></textarea>
+                          </div>
+                    
+
+
+                          <div class="buttons style-2">
+                            <button class="cancel-btn" id="cancel-btn">Cancel</button>
+                            <button class="save-btn">Submit</button>
+                          </div>
+
+                </div>
+                <div class="rating-wrap">
                         <div class="rating-block mb-4">
                             <div class="ratings-container">
                                 <!-- Rating Summary -->
@@ -887,6 +930,7 @@
                         <div class="view_all mt-2">
                             <a href="#">View all 942 reviews</a>
                         </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 delivery-option">
@@ -894,7 +938,7 @@
 
                         <h4>Select Delivery Location </h4>
                         <p>Enter the pincode of your area to check product availability and delivery options
-                        <div class="col-6  position-relative mt-1">
+                        <div class="col-6  position-relative mt-3">
                             <input type="text" placeholder="Enter Pin Code" class="pin-holder">
                             <span class="check-pin ms-1"><a href="#">Check</a></span>
                         </div>
@@ -902,39 +946,39 @@
 
                     <div class="custom_accordion  accordion-item mt-0">
                       <h2 class="accordion-header" id="heading1">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
                               data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
                               Description & fit
                           </button>
                       </h2>
                       <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1">
-                          <div class="accordion-body">
+                          <div class="accordion-body px-0">
                               Content
                           </div>
                       </div>
                   </div>
                   <div class="custom_accordion  accordion-item mt-0">
                     <h2 class="accordion-header" id="heading2">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
                             Materials
                         </button>
                     </h2>
                     <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2">
-                        <div class="accordion-body">
+                        <div class="accordion-body px-2">
                             Content
                         </div>
                     </div>
                 </div>
                 <div class="custom_accordion  accordion-item mt-0">
                   <h2 class="accordion-header" id="heading3">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      <button class="accordion-button collapsed ps-0" type="button" data-bs-toggle="collapse"
                           data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
                           Care guide
                       </button>
                   </h2>
                   <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3">
-                      <div class="accordion-body">
+                      <div class="accordion-body px-2">
                           Content
                       </div>
                   </div>
@@ -1503,6 +1547,21 @@
             });
         });
     </script>
+    <script>
+    $(document).ready(function () {
+    $('#showrate').click(function () {
+        $('.rating-wrap').hide();
+        $('.post-my-review').show();
+    });
+
+    $('#cancel-btn').click(function () {
+      $('.rating-wrap').show();
+      $('.post-my-review').hide();
+    });
+    });
+    </script>
+    
+    
 </body>
 
 </html>

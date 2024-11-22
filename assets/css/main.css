@@ -3715,7 +3715,9 @@ input[type="checkbox"].color-select:checked::before {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   color: #ff406c;
+  cursor: pointer;
 }
+.rate-this-product:focus,.rate-this-product:hover{color: #ff406c;}
 
 .ratings-container {
   background-color: #f0eaee;
@@ -3854,6 +3856,7 @@ input[type="checkbox"].color-select:checked::before {
 
 .delivery-option h4 {
   min-width: 190px;
+  margin-bottom:5px;
 }
 
 .delivery-option {
@@ -5029,6 +5032,7 @@ ul.download_app li{display:inline-block;}
   .terms{font-size:16px;}
   .categories-type .form-check-label{font-weight:600;}
   .filters .accordion-body{padding:1rem 0rem;}
+  .filters .accordion-body ul li{line-height:1.5rem;}
   .filters .accordion-button{padding:1rem 0rem;}
   .my-account .pro_left{padding:15px 15px}
   .pro_left h5{font-size:20px;font-weight:600;}
@@ -5224,4 +5228,32 @@ ul.download_app li{display:inline-block;}
   margin-left: auto;
   margin-right: auto;
 }
+.search-product .input-group{width:300px;position: relative;height:40px;margin-top:24px;}
+.search-product .search-icon{position:absolute;left:20px;top:7px;opacity:0.5;}
+.search-product .input-group .input_fi{padding-left:50px;padding-right:30px;border-radius:20px !important;width:100%;border:1px solid #DFDFDF;}
+.brand-banner {
+  position: relative;
+  display: flex; /* Flexbox container */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100%; /* Ensure full height if not already set */
+  text-align: center; /* Optional: Align text */
+  max-height:450px;
+}
 
+.brand-caption {
+  position: absolute; /* Absolute positioning over the image */
+  z-index: 2; /* Ensure it appears above the image */
+  color: #fff; /* White text for better contrast */
+  padding: 20px; /* Add padding if necessary */
+  max-width:900px;
+}
+
+.brand-banner img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  object-fit: cover; /* Cover the container area */
+  border-radius:20px;
+}
+.brands-logo{max-width:200px;}
+.brand-caption p{font-size:18px;font-weight:500;}

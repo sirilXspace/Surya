@@ -51,82 +51,518 @@
         <div class="col-lg-12">
           <div class="nav-inner">
             <!-- Start Navbar -->
-            <div class="d-flex justify-content-between align-items-center">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/images/soorya_logo.png" alt="Logo">
-              </a>
+            <div class="d-flex align-items-center">
 
-              <div class="d-none d-xl-block menu-wrap">
-                <nav class="site-navigation position-relative text-right" role="navigation">
+              <div class="col-lg-1 d-xl-block d-none">
+                <div class="hamburger-menu">
+                  <button class="menu-toggle" id="menuToggle"><i><img src="assets/images/menu.png"
+                        alt="menu-icon"></i></button>
+                  <div class="menu-container" id="menu">
+                    <div class="menu-left">
+                      <ul>
+                        <li data-tab="tab1">FESTIVAL COLLECTION</li>
+                        <li data-tab="tab2">SAREES</li>
+                        <li data-tab="tab3">CO ORD SET</li>
+                        <li data-tab="tab4">MEN</li>
+                        <li data-tab="tab5">HOG&FOG</li>
+                        <li data-tab="tab6" class="active">WOMEN</li>
+                        <li data-tab="tab7">MEDICAL APPAREL</li>
+                        <li data-tab="tab8">KIDS</li>
+                        <li data-tab="tab9">DRESSCODE COLLECTION</li>
+                        <li data-tab="tab10">DRESS MATERIALS</li>
+                        <li data-tab="tab11">HOG & FOG</li>
+                        <li data-tab="tab12">BED SHEETS</li>
+                        <li data-tab="tab13">HOME AND LIVING</li>
+                      </ul>
+                    </div>
+                    <div class="menu-right">
+                      <div class="tab-content" id="tab1" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Festival Collection</h4>
+                            <ul>
+                              <li><a href="#">Womens</a></li>
+                              <li><a href="#">Mens</a></li>
+                              <li><a href="#">Kids</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab2" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Sareers</h4>
+                            <!--
+                          <ul>
+                            <li><a href="#">Sarees</a></li>
+                          </ul>-->
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab3" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4><a href="#">SOFT SILK SAREE</a></h4>
+                            <!--
+                          <ul>
+                            <li><a href="#">SOFT SILK SAREE</a></li>
+                          </ul>-->
+                          </div>
 
-                  <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-                    <li class="has-children">
-                      <a href="#"><span>WOMEN</span></a>
-                      <ul class="dropdown arrow-top">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                        <li class="has-children">
-                          <a href="#">Dropdown</a>
-                          <ul class="dropdown">
-                            <li><a href="#">Menu One</a></li>
-                            <li><a href="#">Menu Two</a></li>
-                            <li><a href="#">Menu Three</a></li>
-                            <li><a href="#">Menu Four</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="has-children">
-                      <a href="#"><span>MEN</span></a>
-                      <ul class="dropdown arrow-top">
-                        <li><a href="#">Menu One</a></li>
-                        <li><a href="#">Menu Two</a></li>
-                        <li><a href="#">Menu Three</a></li>
-                        <li class="has-children">
-                          <a href="#">Dropdown</a>
-                          <ul class="dropdown">
-                            <li><a href="#">Menu One</a></li>
-                            <li><a href="#">Menu Two</a></li>
-                            <li><a href="#">Menu Three</a></li>
-                            <li><a href="#">Menu Four</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#"><span>KIDS</span></a></li>
-                    <li><a href="#"><span>CATEGORY</span></a></li>
-                    <li><a href="#"><span>WEDDING</span></a></li>
-                  </ul>
-                </nav>
+                          <div class="grid-item">
+                            <h4><a href="#">Geroget Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Wedding Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Garden Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Kerala Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Palle Silk Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Set Mund</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Fancy Sarees</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Synthetic Saree</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Tusser Silk Saree</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Jute Semi Silk Sarees</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Cotton Silk Sarees</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Hand Loom Sarees</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Banarasi Saree</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Dresscode Saree</a></h4>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab4" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Bottom Wear</h4>
+                            <ul>
+                              <li><a href="#">Jogger</a></li>
+                              <li><a href="#">Denim Jogger</a></li>
+                              <li><a href="#">Cotton Jogger</a></li>
+                              <li><a href="#">Popcorn Jogger</a></li>
+                              <li><a href="#">Baggy Jeans</a></li>
+                              <li><a href="#">White Dhothi</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Trousers</a></li>
+                              <li><a href="#">Track Pant</a></li>
+                              <li><a href="#">Color Dhothi</a></li>
+                              <li><a href="#">Shorts</a></li>
+                              <li><a href="#">Cargo</a></li>
+                              <li><a href="#">Socks</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Top Wear</h4>
+                            <ul>
+                              <li><a href="#">T-Shirt</a></li>
+                              <li><a href="#">Casual Shirts</a></li>
+                              <li><a href="#">Combo Shirts</a></li>
+                              <li><a href="#">Formal Shirt</a></li>
+                              <li><a href="#">Kurta</a></li>
+                              <li><a href="#">Hoddies</a></li>
+                              <li><a href="#">Shirt & Dhoti</a></li>
+                              <li><a href="#">Active Wear</a></li>
+                              <li><a href="#">Winter Wear</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Inner Wear</h4>
+                            <ul>
+                              <li><a href="#">Jockey Briefs</a></li>
+                              <li><a href="#">VSTAR</a></li>
+                              <li><a href="#">Machoe</a></li>
+                              <li><a href="#">Amul</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Men's Collection</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab5" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4><a href="#">HOG</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab6">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4><a href="#">Kurtis</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Churidar Sets</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Pattu Pavadai Set</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Ethnic Wear</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Women Frock</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Lehenga</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Dhavani</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Pattu Pavadai Bit</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Fardha</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Dupatta</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Nighty</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Night Dress</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Saree Blouse</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Dresses</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Inner Wear</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Maternity Wear</h4>
+                            <ul>
+                              <li><a href="#">Feeding Kutri</a></li>
+                              <li><a href="#">Feeding Nighty</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Dress Code Collection</h4>
+                            <ul>
+                              <li><a href="#">Dress Code Saree</a></li>
+                              <li><a href="#">Dress Code Churidar</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Western Wear</h4>
+                            <ul>
+                              <li><a href="#">Sweaters & Hoodies</a></li>
+                              <li><a href="#">T Shirts</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Top Wear</h4>
+                            <ul>
+                              <li><a href="#">Short Top</a></li>
+                              <li><a href="#">T Shirts</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Prayer Dress Muslim Women</a></h4>
+                          </div>
+                          <div class="grid-item">
+                            <h4>Bottom Wear</h4>
+                            <ul>
+                              <li><a href="#">Ladies Jogger</a></li>
+                              <li><a href="#">Top & Bottom Set</a></li>
+                              <li><a href="#">Leggings</a></li>
+                              <li><a href="#">Jeggings</a></li>
+                              <li><a href="#">Palazzo Pant</a></li>
+                              <li><a href="#">Palazzo With Shrug</a></li>
+                              <li><a href="#">Skirts</a></li>
+                              <li><a href="#">Short Top & Palazzo</a></li>
+                            </ul>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Churidar Materials</a></h4>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="tab-content" id="tab7" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4><a href="#">Medical Apparel</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab8" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>For Boys</h4>
+                            <ul>
+                              <li><a href="#">Kids Wear</a></li>
+                              <li><a href="#">Jogger</a></li>
+                              <li><a href="#">Kids Shorts</a></li>
+                              <li><a href="#">Kids T Shirt</a></li>
+                              <li><a href="#">Kids Kurta</a></li>
+                            </ul>
+                          </div>
+                          <div class="grid-item">
+                            <h4><a href="#">Kurtis</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">For Girls</a></h4>
+                          </div>
+
+                          <div class="grid-item">
+                            <h4><a href="#">Baby</a></h4>
+                          </div>
+
+                        </div>
+
+                      </div>
+                      <div class="tab-content" id="tab9" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4><a href="#">Dresscode Collection</a></h4>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab10" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Dress Materials</h4>
+                            <ul>
+                              <li><a href="#">Running Materials</a></li>
+                              <li><a href="#">Blouse Materials</a></li>
+                              <li><a href="#">Suiting & Shirting</a></li>
+                              <li><a href="#">Shirt Material</a></li>
+                              <li><a href="#">Dress Code</a></li>
+                              <li><a href="#">Running Material</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab11" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>HOG & FOG</h4>
+                            <ul>
+                              <li><a href="#">For Mens</a></li>
+                              <li><a href="#">Kids</a></li>
+                              <li><a href="#">Kids Shirt</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab12" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Bed Sheets</h4>
+                            <ul>
+                              <li><a href="#">Blanket</a></li>
+                              <li><a href="#">Family Bedsheet With Pillow</a></li>
+                              <li><a href="#">Family Bedsheet</a></li>
+                              <li><a href="#">Without Pillow</a></li>
+                              <li><a href="#">Double With Pillow</a></li>
+                              <li><a href="#">Fitted Bedsheet With Pillow Cover</a></li>
+                              <li><a href="#">Single Bedsheet</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-content" id="tab13" style="display: none;">
+                        <div class="grid-container">
+                          <div class="grid-item">
+                            <h4>Bed Sheets</h4>
+                            <ul>
+                              <li><a href="#">Towel</a></li>
+                              <li><a href="#">Sofa Cover</a></li>
+                              <li><a href="#">Matress</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-2 col-2">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/soorya_logo.png" alt="Logo">
+                </a>
+              </div>
+
+              <div class="col-xl-6 col-1">
+                <div class="d-none d-xl-block menu-wrap">
+                  <nav class="site-navigation position-relative text-right" role="navigation">
+
+                    <ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
+                      <li class="has-children">
+                        <a href="#"><span>FESTIVAL COLLECTION</span></a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="#">Women</a></li>
+                          <li><a href="#">Mens</a></li>
+                          <li><a href="#">Kids</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="#"><span>ALL SAREES</span></a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="#">Soft Silk Saress</a></li>
+                          <li><a href="#">Georget Sarees</a></li>
+                          <li><a href="#">Wedding Sarees</a></li>
+                          <li><a href="#">Garden Sarees</a></li>
+                          <li><a href="#">Kerala Sarees</a></li>
+                          <li><a href="#">Palle Silk Sarees</a></li>
+                          <li><a href="#">Set Mund</a></li>
+                          <li><a href="#">Fancy Sarees</a></li>
+                          <li><a href="#">Synthetic Saree</a></li>
+                          <li><a href="#">Tusser Silk Saree</a></li>
+                          <li><a href="#">Jute Semi Silk Sarees</a></li>
+                          <li><a href="#">Cotton Silk Sarees</a></li>
+                          <li><a href="#">Hand Loom Sarees</a></li>
+                          <li><a href="#">Banarasi Saree</a></li>
+                          <li><a href="#">Dresscode Saree</a></li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="#"><span>MEN</span></a>
+                        <ul class="dropdown arrow-top">
+                          <li class="has-children">
+                            <a href="#">Bottom Wear</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Jogger</a></li>
+                              <li><a href="#">Denim Jogger</a></li>
+                              <li><a href="#">Cotton Jogger</a></li>
+                              <li><a href="#">Popcorn Jogger</a></li>
+                              <li><a href="#">Baggy Jeans</a></li>
+                              <li><a href="#">White Dhothi</a></li>
+                              <li><a href="#">Jeans</a></li>
+                              <li><a href="#">Trousers</a></li>
+                              <li><a href="#">Track Pant</a></li>
+                              <li><a href="#">Color Dhothi</a></li>
+                              <li><a href="#">Shorts</a></li>
+                              <li><a href="#">Cargo</a></li>
+                              <li><a href="#">Socks</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-children">
+                            <a href="#">Top Wear</a>
+                            <ul class="dropdown">
+                              <li><a href="#">T-Shirt</a></li>
+                              <li><a href="#">Casual Shirts</a></li>
+                              <li><a href="#">Combo Shirts</a></li>
+                              <li><a href="#">Formal Shirt</a></li>
+                              <li><a href="#">Kurta</a></li>
+                              <li><a href="#">Hoddies</a></li>
+                              <li><a href="#">Shirt & Dhoti</a></li>
+                              <li><a href="#">Active Wear</a></li>
+                              <li><a href="#">Winter Wear</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-children">
+                            <a href="#">Inner Wear</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Jockey Briefs</a></li>
+                              <li><a href="#">VSTAR</a></li>
+                              <li><a href="#">Machoe</a></li>
+                              <li><a href="#">Amul</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-children">
+                        <a href="#"><span>MORE</span></a>
+                        <ul class="dropdown arrow-top">
+                          <li><a href="#">Kurtis</a></li>
+                          <li><a href="#">Churidar Sets</a></li>
+                          <li><a href="#">Pattu Pavadai Set</a></li>
+                          <li><a href="#">Ethnic Weart</a></li>
+                          <li><a href="#">Women Frock</a></li>
+                          <li><a href="#">Lehenga</a></li>
+                          <li><a href="#">Dhavani</a></li>
+                          <li><a href="#">Pattu Pavadai Bit</a></li>
+                          <li><a href="#">Fardha</a></li>
+                          <li class="has-children">
+                            <a href="#">Maternity Wear</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Feeding Kutri</a></li>
+                              <li><a href="#">Feeding Nighty</a></li>
+                            </ul>
+                          </li>
+                          <li class="has-children">
+                            <a href="#">Western Wear</a>
+                            <ul class="dropdown">
+                              <li><a href="#">Sweaters & Hoodies</a></li>
+                              <li><a href="#">T Shirts</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
               </div>
 
 
+              <div class="col-xl-3 col-9 justify-content-end d-flex">
+                <div class="button add-list-button">
+                  <ul class="right_side_ul">
+                    <li>
+                      <a href="#">
+                        <img src="assets/images/icn_01.svg" data-bs-toggle="modal" data-bs-target="#searchModal">
+                      </a>
+                    </li>
 
-              <div class="button add-list-button">
-                <ul class="right_side_ul">
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/icn_01.svg" data-bs-toggle="modal" data-bs-target="#searchModal">
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/icn_03.svg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/icn_02.svg">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <img src="assets/images/icn_04.svg"> <span class="signin_text">Sign in</span>
-                    </a>
-                  </li>
-                </ul>
+                    <li>
+                      <a href="#">
+                        <img src="assets/images/icn_03.svg">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/images/icn_02.svg">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img src="assets/images/icn_04.svg"> <span class="signin_text">Sign in</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
               </div>
 
               <div class="d-inline-block d-xl-none ml-md-0 mr-auto"><a href="#"

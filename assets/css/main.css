@@ -3827,7 +3827,6 @@ input[type="checkbox"].color-select:checked::before {
   font-size: 14px;
   font-weight: 600;
 }
-
 .enter_pincode {
   width: 100%;
 }
@@ -4581,7 +4580,7 @@ h4.inner-title {
   color: #222222;
   font-size: 16px;
 }
-
+.product-list-card-wrapper .card-title a,.product-list-card-wrapper .card-title a:hover{color: #222222;}
 .color-select {
   width: 20px;
   height: 20px;
@@ -4917,10 +4916,10 @@ ul.download_app li{display:inline-block;}
   font-size: 24px;
   line-height: 31px;
   /* identical to box height */
-  text-decoration-line: underline;
+  /*text-decoration-line: underline;*/
   color: #FF406C;
-  
   }
+  .view_all:hover{color:#FF406C;}
   .overlay-box{font-size:20px;line-height:26px;font-weight:600;color:#fff;padding:10px 10px}
   .flash-product-block{margin-top:50px;}
   .bg-color-1{background-color:rgba(159, 166, 150, 0.6);}
@@ -5129,7 +5128,7 @@ ul.download_app li{display:inline-block;}
   color: #333;
   font-size:14px;
 }
-.menu-left li.active {
+.menu-left li.active,.menu-left li:hover {
   background: #FF406C;
   font-weight: 700;
   color:#fff;
@@ -5172,19 +5171,19 @@ ul.download_app li{display:inline-block;}
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust to control column widths */
-  gap: 15px; /* Controls space between items */
-  padding: 0px;
+  display: flex;
+  flex-wrap:wrap;
 }
 .grid-item {
-  padding: 0px;
+  padding:7px 7px;
+  width:20%;
 }
 .grid-item h4 {
   font-size: 17px;
   margin-bottom:5px;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
+.grid-item h4 a:hover{color:#FF406C;}
 .grid-item ul {
   padding: 0;
   list-style-type: none;
@@ -5196,3 +5195,33 @@ ul.download_app li{display:inline-block;}
   text-decoration: none;
   color: #333;
 }
+
+.ProductsliderPopup .modal-dialog{max-width:1100px;margin-top:5rem;}
+.ProductsliderPopup .product-slider .mySwiper2{margin-left:20px;}
+.ProductsliderPopup .product_description{padding-left:0%;}
+.ProductsliderPopup .product_description h3{font-size:20px;}
+.ProductsliderPopup .current-price{font-size:24px;}
+.ProductsliderPopup .actual-price{font-size:20px;}
+.ProductsliderPopup .color-code .color{font-size:16px;}
+.ProductsliderPopup .select-size{font-size:16px;}
+.ProductsliderPopup .select-size span{font-size:16px;}
+.c_close{position:absolute;right:-20px;top:-20px;z-index:55;}
+.ProductsliderPopup .thumbnail-button{margin-left:60px;}
+.brand_box {
+  background-color: #333333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+.brand_box img {
+  max-width:90%;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

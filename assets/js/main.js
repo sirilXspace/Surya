@@ -16,6 +16,52 @@ Author: GrayGrids
     }
 
 
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menuToggle');
+        const menuContainer = document.querySelector('.menu-container');
+        const tabs = document.querySelectorAll('.menu-left li');
+        const tabContents = document.querySelectorAll('.tab-content');
+  
+        // Show the menu on hover
+        menuToggle.addEventListener('mouseenter', function () {
+          menuContainer.classList.add('active');
+        });
+  
+        // Keep the menu visible while interacting with it
+        menuContainer.addEventListener('mouseenter', function () {
+          menuContainer.classList.add('active');
+        });
+  
+        // Hide the menu when leaving both menuToggle and menuContainer
+        menuToggle.addEventListener('mouseleave', function () {
+          setTimeout(() => {
+            if (!menuContainer.matches(':hover')) {
+              menuContainer.classList.remove('active');
+            }
+          }, 100); // Delay to allow transition between hover states
+        });
+  
+        menuContainer.addEventListener('mouseleave', function () {
+          menuContainer.classList.remove('active');
+        });
+  
+        // Handle tab switching
+        tabs.forEach((tab) => {
+          tab.addEventListener('click', function () {
+            // Remove active class from all tabs
+            tabs.forEach((t) => t.classList.remove('active'));
+  
+            // Hide all tab contents
+            tabContents.forEach((content) => (content.style.display = 'none'));
+  
+            // Activate clicked tab and its content
+            this.classList.add('active');
+            const tabId = this.getAttribute('data-tab');
+            document.getElementById(tabId).style.display = 'block';
+          });
+        });
+      });
+
     /*=====================================
     Sticky
     ======================================= */
@@ -110,6 +156,5 @@ Author: GrayGrids
     navbarToggler.addEventListener('click', function () {
         navbarToggler.classList.toggle("active");
     });
-
 
 })();

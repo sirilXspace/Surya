@@ -119,6 +119,7 @@
     .add-list-button{margin-right:35px;margin-left:0px;}
     .header{padding-top:10px;padding-bottom:10px;}
     .site-menu-toggle{position: relative;right:20px;top:2px;}
+    .c_close{right:0px;}
     
 
 }
@@ -524,7 +525,16 @@
       .inner-banner img{height:115px;}
       .inner-banner h1{font-size:30px;}
       .edit_details{padding:15px 15px 15px 15px}
+      .ProductsliderPopup .product_description h3{font-size:16px;}
+      .ProductsliderPopup .current-price{font-size:16px;}
+      .ProductsliderPopup .actual-price{font-size:14px;}
+      .ProductsliderPopup .select-size span{font-size:13px;}
+      .ProductsliderPopup .color-code .color{font-size:13px;}
+      .ProductsliderPopup .select-size{font-size:13px;}
+      .ProductsliderPopup .thumbnail-button{margin-left:35px;}
+
 }
+
 
 
 @media (max-width: 575.98px) {
@@ -585,6 +595,11 @@
     .btn_style{margin-top:10px;}
     .promo-text img{width:100px;}
     .promo-text p{font-size:12px;}
+    .btn-add-to-bag, .btn-buy-now{font-size:10px;}
+    .bag-ic img{width:15px;}
+    .lightning-fill img{width:15px;}
+    .ProductsliderPopup {padding-right: 0px;}
+    .ProductsliderPopup .thumbnail-button{margin-left:22px;}
 
 
 }

@@ -5257,3 +5257,46 @@ ul.download_app li{display:inline-block;}
 }
 .brands-logo{max-width:200px;}
 .brand-caption p{font-size:18px;font-weight:500;}
+.wished-item{font-weight:400;}
+.close_ic{position: absolute;right:5%;top:5%;}
+.custom_select{height:45px;border-radius:0px;}
+.custom_select:focus{border:1px solid #FF406C;}
+.c_btn{height:50px;line-height:50px;background-color:#FF406C;color:#fff;text-align:center;}
+.c_btn:hover{color:#fff;}
+.grayscale-div {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  filter: grayscale(100%);
+  color: #888;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.c_btn-2{height:45px;line-height:45px;border:1px solid #FF406C;color:#FF406C;text-align:center;font-size:16px;font-weight:500;background-color:transparent;}
+.c_btn-2:hover{color:#FF406C;}
+.price_details{padding:25px 20px}
+.price_details h4{font-size:20px;font-weight:600;color:rgb(34, 34, 34,0.8);}
+.no_item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  height: 200px;
+  background: rgba(255, 64, 108, 0.05);
+  border: 1px dashed #FF406C;
+}
+.no_item h4{font-size:20px;font-weight:600;color:rgb(34, 34, 34,0.8);margin-bottom:10px;}
+.no_item p{font-size:16px;font-weight:600;color:rgb(34, 34, 34,0.8);}
+.total_price{padding-top:15px;padding-bottom:15px;border-bottom:1px solid #DFDFDF;border-top:1px solid #DFDFDF;font-size:16px;}
+.total_price.bold{font-weight:600;}
+.quantity-container3{background-color:#FF406C;}
+.quantity-container3 .btn{color:#fff;padding:7px 15px;font-size:17px;}
+.quantity-container3 .form-control{background-color:#FF406C;color:#fff;font-size:17px;}
+.disc_price{color:#FF406C;font-weight:400;}
+.cart_item{padding-left:90px;padding-right:30px;margin-bottom:40px;}
+.cart_item .img-holder2 img{border-radius:10px;border:1px solid #FF406C;}
+.cart_item .cart_ic{position: absolute;right:-10px;top:-10px;width:20px;height:20px;border-radius:50px;text-align:center;background-color:#FF406C;color:#fff;}
+.cart_item .img-holder2{position: absolute;width:75px;left:0px;}
+.cart_item h5,.price2{font-size:15px;font-weight:600;margin-bottom:5px;}
+.cart_item .color{font-size:12px;margin-bottom:5px;}
+.delete{position:absolute;right:0px;bottom:0px;}

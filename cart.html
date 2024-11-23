@@ -1242,7 +1242,52 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/jquery.sticky.js"></script>
   <script src="assets/js/main2.js"></script>
-
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Select all quantity containers
+      const quantityContainers = document.querySelectorAll('.quantity-container2');
+  
+      quantityContainers.forEach(container => {
+        const decrementBtn = container.querySelector('.decrement-btn');
+        const incrementBtn = container.querySelector('.increment-btn');
+        const quantityInput = container.querySelector('.quantity-input');
+  
+        // Decrement button functionality
+        decrementBtn.addEventListener('click', () => {
+          let currentValue = parseInt(quantityInput.value) || 1;
+          const minValue = parseInt(quantityInput.getAttribute('min')) || 1;
+  
+          if (currentValue > minValue) {
+            quantityInput.value = currentValue - 1;
+          }
+        });
+  
+        // Increment button functionality
+        incrementBtn.addEventListener('click', () => {
+          let currentValue = parseInt(quantityInput.value) || 1;
+          const maxValue = parseInt(quantityInput.getAttribute('max')) || 10;
+  
+          if (currentValue < maxValue) {
+            quantityInput.value = currentValue + 1;
+          }
+        });
+  
+        // Prevent manual input outside the range
+        quantityInput.addEventListener('input', () => {
+          let currentValue = parseInt(quantityInput.value) || 1;
+          const minValue = parseInt(quantityInput.getAttribute('min')) || 1;
+          const maxValue = parseInt(quantityInput.getAttribute('max')) || 10;
+  
+          if (currentValue < minValue) {
+            quantityInput.value = minValue;
+          } else if (currentValue > maxValue) {
+            quantityInput.value = maxValue;
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

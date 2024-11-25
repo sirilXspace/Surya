@@ -3696,7 +3696,7 @@ input[type="checkbox"].color-select:checked::before {
 }
 
 .btn-add-to-bag,
-.btn-buy-now {
+.btn-buy-now{
   font-size: 12px;
   height: 40px;
 }
@@ -5104,14 +5104,13 @@ ul.download_app li{display:inline-block;}
   background: #f4f4f4;
   border: 1px solid #ddd;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-direction: row; /* Flex layout for menu */
+  flex-direction: row;
   margin-left: auto;
   margin-right: auto;
   z-index:55;
-  /*max-height: 0; Initially collapsed */
-  background: #fff; /* Background color of the menu */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better visibility */
-  /* transition: max-height 0.4s ease; Smooth height transition */
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width:1340px;
 }
 .menu-container.active {
   display: flex; /* Display menu when active */
@@ -5183,7 +5182,7 @@ ul.download_app li{display:inline-block;}
   width:20%;
 }
 .grid-item h4 {
-  font-size: 17px;
+  font-size: 16px;
   margin-bottom:5px;
   text-transform: capitalize;
 }
@@ -5202,7 +5201,7 @@ ul.download_app li{display:inline-block;}
 
 .ProductsliderPopup .modal-dialog{max-width:1100px;margin-top:5rem;}
 .ProductsliderPopup .product-slider .mySwiper2{margin-left:20px;}
-.ProductsliderPopup .product_description{padding-left:0%;}
+.ProductsliderPopup .product_description{padding-left:0%;padding-top:2%;}
 .ProductsliderPopup .product_description h3{font-size:20px;}
 .ProductsliderPopup .current-price{font-size:24px;}
 .ProductsliderPopup .actual-price{font-size:20px;}
@@ -5300,3 +5299,6 @@ ul.download_app li{display:inline-block;}
 .cart_item h5,.price2{font-size:15px;font-weight:600;margin-bottom:5px;}
 .cart_item .color{font-size:12px;margin-bottom:5px;}
 .delete{position:absolute;right:0px;bottom:0px;}
+.view-details{background-color:#222222;color:#fff;font-size:12px;height:40px;line-height:40px;padding-top:0px;padding-bottom:0px;}
+.view-details:hover{color:#fff;}
+.c_btn-2.disabled{opacity:0.8;background-color: transparent;color:#222222;}

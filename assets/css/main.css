@@ -5019,9 +5019,9 @@ ul.download_app li{display:inline-block;}
   .banner-title{position: absolute;z-index: 55;}
   .login .wrapper{max-width:700px;margin-left: auto;margin-right: auto;}
   .login .wrapper h3{font-size:40px;font-weight:500;}
-  .login .wrapper h4{font-size:24px;font-weight:400;}
+  .login .wrapper h4{font-size:20px;font-weight:400;}
   .custom-pad{padding-top:50px;padding-bottom:50px;}
-  .clabel{color:#222222;font-size:18px;font-weight:500;}
+  .clabel{color:#222222;font-size:16px;font-weight:500;}
   .theme-color{background-color:#FF406C;color:#fff;font-weight:500;font-size:18px;}
   .theme-color:hover{color:#fff;}
   .input-group-text{background-color: transparent;}
@@ -5302,3 +5302,26 @@ ul.download_app li{display:inline-block;}
 .view-details{background-color:#222222;color:#fff;font-size:12px;height:40px;line-height:40px;padding-top:0px;padding-bottom:0px;}
 .view-details:hover{color:#fff;}
 .c_btn-2.disabled{opacity:0.8;background-color: transparent;color:#222222;}
+.clabel_2{color:#222222;font-size:16px;}
+.con-info{padding:30px 20px;border-radius:20px;box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);height:100%;}
+.support_links ul li a{color:#222222;font-size:16px;padding-top:20px;padding-bottom:20px;}
+.con-info h3{color:rgb(34, 34, 34,0.8);font-size:16px;font-weight:500;margin-bottom:10px;}
+.con-info p{color:rgb(34, 34, 34,0.8);font-size:14px;}
+.quick-contact{padding-right:1.5rem;}
+.form-control:focus {
+  border-color: #ff6b81;
+}
+.about-us{background: rgba(255, 245, 248, 1);}
+.about-us h2{color:rgba(255, 64, 108, .5);font-size:30px;font-weight:400;margin-bottom:1rem;}
+.about-us h1{color: rgba(255, 64, 108, 1);font-size:50px;font-weight:600;margin-bottom:1rem;}
+.about-us .con{padding-right:1rem;}
+.about-us .con p{font-size:18px;color:rgba(34, 34, 34, .7);line-height:34px;margin-bottom:10px;}
+.blog .wrap{margin-left:-25px;margin-right:-25px;margin-top:25px;}
+.blog-wrap{margin-top:25px;margin-bottom:25px;padding:0px 25px;}
+.blog-wrap p{color:rgb(30, 30, 30,0.5);}
+.blog-wrap h4{color:#1E1E1E;font-size:20px;line-height:30px;font-weight:600;}
+.read_more{color:#FF406C;font-size:15px;font-weight:600;}
+.read_more:hover{color:#FF406C;}
+.back-btn{opacity:0.5;}
+.blog-details h1{font-size:50px;font-weight:600;color:#1E1E1E;margin-bottom:1rem;}
+.blog-details p{font-size:17px;margin-bottom:1rem;color:rgb(30, 30, 30,0.5);}

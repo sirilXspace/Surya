@@ -120,7 +120,14 @@
     .header{padding-top:10px;padding-bottom:10px;}
     .site-menu-toggle{position: relative;right:20px;top:2px;}
     .c_close{right:0px;}
-    
+    .about-us h2{font-size:25px;}
+    .about-us h1{font-size:40px;}
+    .blog .wrap{margin-left:-15px;margin-right:-15px;margin-top:25px;}
+    .blog-wrap h4{font-size:17px;line-height:27px;}
+    .blog-wrap{padding:0px 15px;margin-top:10px;margin-bottom:10px;}
+    .read_more{font-size:13px;}
+    .blog-details p{font-size:15px;}
+    .blog-details h1{font-size:40px;}
 
 }
 
@@ -230,6 +237,10 @@
     .address-right h4{font-size:18px;}
     .hamburger-menu{display:none;}
     .signin_text{font-size:0px;}
+    .about-us h2{font-size:20px;}
+    .about-us h1{font-size:30px;}
+    .about-us .con p{font-size:14px;line-height:30px;}
+    .blog-details h1{font-size:30px;}
    
     
 }
@@ -252,7 +263,10 @@
 
 @media (max-width: 767.98px) {
 
-
+    h3 {
+        font-weight: 600;
+        font-size: 25px;
+    }
     .filter_ic {
         border: none;
         position: fixed;
@@ -453,12 +467,6 @@
     .form-check {
         font-size: 14px;
     }
-
-    h3 {
-        font-weight: 600;
-        font-size: 25px;
-    }
-
     .more_buttion {
         font-size: 15px;
     }
@@ -521,7 +529,6 @@
       .login .wrapper h3{font-size:23px;}
       .login .wrapper h4{font-size:14px;}
       .header{padding-top:10px;padding-bottom:10px;}
-
       .inner-banner img{height:115px;}
       .inner-banner h1{font-size:30px;}
       .edit_details{padding:15px 15px 15px 15px}
@@ -533,13 +540,24 @@
       .ProductsliderPopup .select-size{font-size:13px;}
       .ProductsliderPopup .thumbnail-button{margin-left:35px;}
       .c_btn-2{height:40px;line-height:40px;}
+      .quick-contact{padding-right:0px;}
+      .con-info{margin-top:40px;}
+      .support_links ul li a{padding-top:7px;padding-bottom:7px;}
+      .con-info{height:auto;}
+      .about-us h2,.about-us h1,.about-us p{text-align:center;}
+      .about-us .img-box-2{text-align:center;margin-bottom:1rem;}
+      .about-us .con{padding-right:0%;}
+      .about-us .con p:last-child{margin-bottom:0px;}
+      .about-us h2{font-size:17px;margin-bottom:10px;}
+      .about-us h1{font-size:20px;}
+      .blog-details h1{font-size:20px;}
 
 }
 
 
 
 @media (max-width: 575.98px) {
-
+    h3{font-size:19px;}
     .product-slider {
         height: 220px;
     }
@@ -575,7 +593,6 @@
     }
     .flash-sale .wrap{padding:30px 20px}
     /*.hero-area{padding:90px 0 20px 0;}*/
-    h3{font-size:19px;}
     .flash-sale-wrap h5{padding:10px 20px;font-size:14px;}
     #countdown{font-size:20px;padding:10px 10px}
     .flash-sale .wrap{background-image: none;}
@@ -601,6 +618,7 @@
     .lightning-fill img{width:15px;}
     .ProductsliderPopup {padding-right: 0px;}
     .ProductsliderPopup .thumbnail-button{margin-left:22px;}
-
-
+    .c_btn-2{font-size:12px;}
+    .c_btn{height:40px;line-height:40px;font-size:12px;}
+    .custom_select{font-size:12px;height:40px;}
 }
